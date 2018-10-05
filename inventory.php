@@ -29,18 +29,18 @@
 				<ul class="right hide-on-med-and-down">
 				  <li><a href="index.php">Home</a></li>
 					 <li><a href="inventory.php">Inventory</a></li>
-				  <li><a href="about.html">About</a></li>
+				  <li><a href="about.php">About</a></li>
 				</ul>
 			</div>
 		</nav>
         <!--Side Nav-->
          <ul id="slide-out" class="side-nav">
           <div class="text">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="reviews.html">Inventory</a></li>
+            <li><a href="inventory.php">Inventory</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.php">About</a></li>
           </div>
         </ul>
             <script>$(".button-collapse").sideNav();</script>
@@ -163,9 +163,9 @@
                   <div class="row">
                     <div class="col l6 s12">
                       <h5 class="white-text">Footer Content</h5>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="inventory.php">Inventory</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.php">About</a></li>
                     </div>
                     <div class="col l4 offset-l2 s12">
                       <h5 class="white-text">Links</h5>
