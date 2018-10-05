@@ -25,7 +25,7 @@
 				<a href="#!" class="brand-logo"></a>
                  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
-				  <li><a href="index.html">Home</a></li>
+				  <li><a href="index.php">Home</a></li>
 					 <li><a href="reviews.html">Inventory</a></li>
 				  <li><a href="about.html">About</a></li>
 				</ul>
