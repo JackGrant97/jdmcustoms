@@ -36,7 +36,7 @@
           <div class="text">
             <li><a href="index.php">Home</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="nventory.php">Inventory</a></li>
+            <li><a href="inventory.php">Inventory</a></li>
             <li><div class="divider"></div></li>
             <li><a href="about.html">About</a></li>
           </div>
@@ -60,7 +60,7 @@
                     <div class="col l6 s12">
                       <h5 class="white-text">Footer Content</h5>
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="nventory.php">Reviews</a></li>
+                        <li><a href="inventory.php">Inventory</a></li>
                         <li><a href="about.html">About</a></li>
                     </div>
                     <div class="col l4 offset-l2 s12">
