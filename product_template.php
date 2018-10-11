@@ -30,6 +30,7 @@
 					<li><a href="inventory.php">Inventory</a></li>
 				  <li><a href="about.php">About</a></li>
           <li><a href="login.php">login</a></li>
+          <li><a href="register.php">Register</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -39,9 +40,10 @@
             <li><a href="index.php">Home</a></li>
             <li><div class="divider"></div></li>
             <li><a href="inventory.php">Inventory</a></li>
-            <li><div class="divider"></div></li>
             <li><a href="about.php">About</a></li>
+            <li><div class="divider"></div></li>
             <li><a href="login.php">login</a></li>
+            <li><a href="register.php">Register</a></li>
           </div>
         </ul>
             <script>$(".button-collapse").sideNav();</script>
@@ -162,6 +164,7 @@
                         <li><a href="inventory.php">Inventory</a></li>
                         <li><a href="about.php">About</a></li>
                         <li><a href="login.php">login</a></li>
+                        <li><a href="register.php">Register</a></li>
                     </div>
                     <div class="col l4 offset-l2 s12">
                       <h5 class="white-text">Links</h5>
