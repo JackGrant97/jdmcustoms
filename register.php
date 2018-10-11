@@ -56,36 +56,36 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="Firstname" type="Firstname">
-              <label for="email" data-error="wrong" data-success="right">First Name</label>
+              <input class="FIrstName" type="email">
+              <label for="FirstName">First Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="Lastname" type="Lastname">
-              <label for="email" data-error="wrong" data-success="right">Last Name</label>
+              <input class="LastName" type="email">
+              <label for="LastName">Last Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="Address" type="Address">
-              <label for="email" data-error="wrong" data-success="right">Address</label>
+              <input class="Address" type="email">
+              <label for="City">Address</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="City" type="City">
-              <label for="email" data-error="wrong" data-success="right">City</label>
+              <input class="City" type="email">
+              <label for="City">City</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="PostCode" type="PostCode">
-              <label for="email" data-error="wrong" data-success="right">Postcode</label>
+              <input class="PostCode" type="email">
+              <label for="PostCode">Postcode</label>
             </div>
           </div>
           <div class="row">
