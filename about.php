@@ -47,7 +47,7 @@
             <script>$(".button-collapse").sideNav();</script>
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
-
+<main>
     </div>
          <script>
               $('.carousel.carousel-slider').carousel({fullWidth: true});
@@ -118,6 +118,7 @@
             $('.collapsible').collapsible();
           });
       </script>
+    </main>
 	  <!--Footer-->
         <div class="footer">
           <footer class="page-footer grey darken-4">
