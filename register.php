@@ -56,35 +56,35 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="validate" id="email" type="email">
+              <input class="Firstname" type="Firstname">
               <label for="email" data-error="wrong" data-success="right">First Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="validate" id="email" type="email">
+              <input class="Lastname" type="Lastname">
               <label for="email" data-error="wrong" data-success="right">Last Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="validate" id="email" type="email">
+              <input class="Address" type="Address">
               <label for="email" data-error="wrong" data-success="right">Address</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="validate" id="email" type="email">
+              <input class="City" type="City">
               <label for="email" data-error="wrong" data-success="right">City</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="validate" id="email" type="email">
+              <input class="PostCode" type="PostCode">
               <label for="email" data-error="wrong" data-success="right">Postcode</label>
             </div>
           </div>
