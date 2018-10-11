@@ -134,9 +134,12 @@ iframe
 }
 
 #login-page {
+   padding-top: 3%;
    width: 25%;
    height: 25%;
-   padding-top: 3%;
+   min-width: 20%;
+   min-height: 20%;
+   object-position: center;
 }
 
 .card {
