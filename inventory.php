@@ -49,7 +49,7 @@
     </header>
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
-
+	 <main>
 	  <!--Cards-->
 	  <div class="container">
 	   <div class="content">
@@ -155,7 +155,7 @@
 		</div>
 		  </div>
 	  	</div>
-
+	  </main>
 
 
         <!--Footer-->
