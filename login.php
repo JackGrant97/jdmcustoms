@@ -18,6 +18,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body ng-app="mainModule" ng-controller="mainController">
+  <!-- Navbar -->
   <nav class="z-depth-0">
       <div class="nav-wrapper">
       <a href="#!" class="brand-logo"></a>
@@ -30,6 +31,27 @@
       </ul>
     </div>
   </nav>
+      <!--Side Nav-->
+       <ul id="slide-out" class="side-nav">
+        <div class="text">
+          <li><a href="index.php">Home</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="inventory.php">Inventory</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="login.php">login</a></li>
+        </div>
+      </ul>
+          <script>$(".button-collapse").sideNav();</script>
+  </header>
+<body background="assets/bg.jpeg" width="100%" height="100%">
+  <main>
+      <div class="container">
+          <div class="jumbo">
+              <div class="maintext">JDM Customs | Car Sales </div>
+          </div>
+      </div>
+    </main>
 <div id="login-page" class="row">
     <div class="col s12 z-depth-6 card-panel">
       <form class="login-form">
