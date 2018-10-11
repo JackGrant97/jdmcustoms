@@ -79,7 +79,7 @@
                 </div>
                 <div class="footer-copyright">
                   <div class="container">
-                 © Copyright 2017 - All Rights Reserved
+                 © Copyright 2018 - All Rights Reserved
                   <a class="grey-text text-lighten-4 right" href="#!"></a>
                   </div>
                 </div>

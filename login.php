@@ -88,5 +88,36 @@
       </form>
     </div>
   </div>
+  <!--Footer-->
+    <div class="footer">
+      <footer class="page-footer grey darken-4">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="inventory.php">Inventory</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="login.php">login</a></li>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+             © Copyright 2018 - All Rights Reserved
+              <a class="grey-text text-lighten-4 right" href="#!"></a>
+              </div>
+            </div>
+       </footer>
+  </div>
 </body>
 </html>
