@@ -103,12 +103,6 @@
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12 m12 l12  login-text">
-                <input type="checkbox" id="remember-me" />
-                <label for="remember-me">Remember me</label>
-            </div>
-          </div>
-          <div class="row">
             <div class="input-field col s12">
               <a href="#" class="btn waves-effect waves-light col s12">Register</a>
             </div>
