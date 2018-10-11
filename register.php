@@ -110,7 +110,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <a href="#" class="btn waves-effect waves-light col s12">Login</a>
+              <a href="#" class="btn waves-effect waves-light col s12">Register</a>
             </div>
           </div>
           <div class="row">
