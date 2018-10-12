@@ -83,7 +83,7 @@
     $cpassword_error = "Password and Confirm Password doesn't match";
     }
     if (!$error) {
-    if(mysqli_query($con, "INSERT INTO users(name,email,password) VALUES('" .
+    if(mysqli_query($con, "INSERT INTO users(FIrstName,LastName,address,City,PostCode,password) VALUES('" .
 
     $firstname_error . "', '" . $email . "', '" . md5($password) . "')")) {
 
