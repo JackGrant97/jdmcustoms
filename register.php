@@ -49,7 +49,7 @@
 <body background="assets/bg.jpeg" width="100%" height="100%">
 <main>
   <div id="login-page" class="row">
-      <div class="col s12 z-depth-6 card-panel">
+      <div class="col m1 z-depth-6 card-panel">
         <form class="login-form">
           <div class="row">
           </div>
