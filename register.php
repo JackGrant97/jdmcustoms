@@ -50,7 +50,7 @@
 <main>
   <div id="register-page" class="row">
       <div class="col s12 z-depth-6 card-panel">
-        <form class="login-form">
+        <form class="register-form">
           <div class="row">
           </div>
           <div class="row">
