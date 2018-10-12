@@ -4,18 +4,18 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/materialize.css">
+      <link type="text/css" rel="stylesheet" href="css/materialize.css">
       <link type="text/css" rel="stylesheet" href="css/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-    <style>
-      .mySlides {display:none}
-      .demo {cursor:pointer}
-    </style>
+      <style>
+        .mySlides {display:none}
+        .demo {cursor:pointer}
+      </style>
       <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body ng-app="mainModule" ng-controller="mainController">
   <!-- Navbar -->
@@ -47,56 +47,6 @@
           <script>$(".button-collapse").sideNav();</script>
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
-  <?php
-    session_start();
-    if(isset($_SESSION['userID'])) {
-    header("Location: index.php");
-    }
-    include_once 'dbconnect.php';
-    //set validation error flag as false
-    $error = false;
-    //check if form is submitted
-    if (isset($_POST['signup'])) {
-    $firstname = mysqli_real_escape_string($con, $_POST['First Name']);
-    $Lastname = mysqli_real_escape_string($con, $_POST['Last Name']);
-    $address = mysqli_real_escape_string($con, $_POST['address']);
-    $City = mysqli_real_escape_string($con, $_POST['City']);
-    $postcode = mysqli_real_escape_string($con, $_POST['postcode']);
-    $email = mysqli_real_escape_string($con, $_POST['email']);
-    $password = mysqli_real_escape_string($con, $_POST['password']);
-    $cpassword = mysqli_real_escape_string($con, $_POST['cpassword']);
-    //name can contain only alpha characters and space
-    if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
-    $error = true;
-    $firstname_error = "Name must contain only alphabets and space";
-    }
-    if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
-    $error = true;
-    $email_error = "Please Enter Valid Email ID";
-    }
-    if(strlen($password) < 6) {
-    $error = true;
-    $password_error = "Password must be minimum of 6 characters";
-    }
-    if($password != $cpassword) {
-    $error = true;
-    $cpassword_error = "Password and Confirm Password doesn't match";
-    }
-    if (!$error) {
-    if(mysqli_query($con, "INSERT INTO users(FIrstName,LastName,address,City,PostCode,password) VALUES('" .
-
-    $firstname_error . "', '" . $email . "', '" . md5($password) . "')")) {
-
-    $successmsg = "Successfully Registered! <a href='login.php'>Click here to
-
-    Login</a>";
-
-    } else {
-    $errormsg = "Error in registering...Please try again later!";
-    }
-    }
-    }
-    ?>
 <main>
   <div id="login-page" class="row">
       <div class="col s12 z-depth-6 card-panel">
