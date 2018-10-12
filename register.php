@@ -56,7 +56,7 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">info_outline</i>
-              <input class="FIrstName" type="email">
+              <input class="FirstName" type="email">
               <label for="FirstName">First Name</label>
             </div>
           </div>
