@@ -58,12 +58,12 @@ if (isset($_POST['signup-submit'])) {
       mysqli_stmt_store_result($stmt);
       $resultCheck = mysqli_stmt_num_rows($stmt);
       if ($resultCheck > 0) {
-        header("Location: ../register.php?error=emailtaken");
+        header("Location: ../register.php?error=emailtaken".$email);
         exit();
       }
       else {
 
-        $sql = "INSERT INTO heroku_11b47e2296993b0.users (FirstName, LastName, email, password, postcode, address, City) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, City) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../register.php?error=sqlerror02");
