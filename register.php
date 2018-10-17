@@ -98,11 +98,9 @@
             </div>
           </div>
           <div class="submit">
-            <form action="includes/signup.inc.php"method="post">
               <button class="btn waves-effect waves-light" type="submit" name="signup-submit">SIGNUP
                 <i class="material-icons right">add</i>
               </button>
-            </form>
           </div>
         </form>
       </div>
