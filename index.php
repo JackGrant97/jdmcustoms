@@ -51,8 +51,9 @@
   <body background="assets/bg.jpeg" width="100%" height="100%">
    	<main>
         <div class="container">
-            <div class="jumbo">
-                <div class="maintext">JDM Customs | Car Sales </div>
+            <div class="logo">
+                <img src="assets/jdmcustoms.png" width="50%" height="50%">
+
             </div>
         </div>
       </main>
