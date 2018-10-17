@@ -49,7 +49,7 @@ if (isset($_POST['signup-submit'])) {
     $sql = "SELECT email FROM users WHERE email=?";
     $stmt = mysqli_stmt_init($con);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-      header("Location: ../register.php?error=sqlerror");
+      header("Location: ../register.php?error=sqlerror01");
       exit();
     }
     else {
@@ -65,7 +65,7 @@ if (isset($_POST['signup-submit'])) {
         $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, city) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-          header("Location: ../register.php?error=sqlerror");
+          header("Location: ../register.php?error=sqlerror02");
           exit();
         }
         else {
