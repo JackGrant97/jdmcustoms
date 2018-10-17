@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+      <title>Register</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -23,10 +24,10 @@
   <nav class="z-depth-0">
       <div class="nav-wrapper">
       <a href="#!" class="brand-logo"></a>
-               <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.php">Home</a></li>
-         <li><a href="inventory.php">Inventory</a></li>
+        <li><a href="inventory.php">Inventory</a></li>
         <li><a href="about.php">About</a></li>
         <li><a href="login.php">Login</a></li>
         <li><a href="register.php">Register</a></li>
@@ -45,12 +46,89 @@
           <li><a href="register.php">Register</a></li>
         </div>
       </ul>
-          <script>$(".button-collapse").sideNav();</script>
+      <script>$(".button-collapse").sideNav();</script>
+
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
-<main>
+  <main>
+    <!--<div class="login">
+      <form action="includes/login.inc.php"method="post">
+        <input type="text"  id="first_name" name="FirstName" placeholder="First Name...">
+        <input type="text" name="LastName"placeholder="Last Name...">
+        <input type="text" name="email" placeholder="E-mail...">
+        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="postcode" placeholder="Postcode">
+        <input type="text" name="address" placeholder="Address">
+        <input type="text" name="City" placeholder="City">
+        <button type="submit" name="login-submit">Login</button>
+      </form>
+      <a href="signup.php">signup</a>
+      <form action="includes/logout.inc.php"method="post">
+        <button type="submit" name="logout-submit">Logout</button>
+      </form>
+    </div>
+    <p>You Are logged out!</p>
+    <p>You are logged in!</p> !-->
+    <div class="register">
+      <div class="row">
+        <form class="col s12" action="includes/login.inc.php" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" name="FirstName" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" name="LastName" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="postcode" name="postcode" type="text" class="validate">
+              <label for="postcode">Postcode</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="City" name="City" type="text" class="validate">
+              <label for="City">City</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="address" name="address" type="text" class="validate">
+              <label for="address">Address</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" name="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" name="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div><div class="row">
+            <div class="input-field col s12">
+              <input id="password" name="password-repeat" type="password" class="validate">
+              <label for="password">Confirm Password</label>
+            </div>
+          </div>
+          <form action="includes/logout.inc.php"method="post">
+            <button class="btn waves-effect waves-light" type="submit" name="login-submit">Submit
+              <i class="material-icons right">add</i>
+            </button>
+          </form>
+        </form>
+      </div>
+    </div>
+    <div class="message">
+      <p>You Are logged out!</p>
+      <p>You are logged in!</p>
+    </div>
+  </main>
 
-</main>
   <!--Footer-->
     <div class="footer">
       <footer class="page-footer grey darken-4">

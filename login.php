@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+      <title>Login</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -21,12 +22,12 @@
   <header>
   <!-- Navbar -->
   <nav class="z-depth-0">
-      <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"></a>
-               <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
+       <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"></a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
         <li><a href="index.php">Home</a></li>
-         <li><a href="inventory.php">Inventory</a></li>
+        <li><a href="inventory.php">Inventory</a></li>
         <li><a href="about.php">About</a></li>
         <li><a href="login.php">Login</a></li>
         <li><a href="register.php">Register</a></li>
@@ -51,6 +52,7 @@
   <main>
 
   </main>
+
   <!--Footer-->
     <div class="footer">
       <footer class="page-footer grey darken-4">

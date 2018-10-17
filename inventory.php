@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Inventory</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link type="text/css" rel="stylesheet" href="css/materialize.css">
+	   <link type="text/css" rel="stylesheet" href="css/materialize.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
-	<style>
-		.mySlides {display:none}
-		.demo {cursor:pointer}
-	</style>
+  	<script type="text/javascript" src="js/js.js"></script>
+  	<style>
+  		.mySlides {display:none}
+  		.demo {cursor:pointer}
+  	</style>
 
     <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

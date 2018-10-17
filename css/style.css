@@ -126,22 +126,22 @@ iframe
     color: white;
 }
 
-.material-icons
+.register
 {
-    color: white;
-    display: inline-flex;
-    vertical-align: top;
+  margin-top: 5%;
+  max-width: 30%;
+  max-height: 100%;
+  background-color: white;
+  margin-left: 35%;
+  border-radius: 5%;
 }
 
-#login-page {
-   padding-top: 3%;
-   width: 40%;
-   height: 25%;
-   min-width: 20%;
-   min-height: 20%;
-   object-position: center;
-}
-
-.card {
-
+.message
+{
+  background-color: white;
+  max-width: 11%;
+  text-align: center;
+  max-height: 100%;
+  border-radius: 3%;
+  margin-left: 44%;
 }
