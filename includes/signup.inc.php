@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['signup-submit'])) {
 
-  require'dbconnect.php';
+  require 'dbconnect.php';
 
   $firstname = $_POST['FirstName'];
   $lastname = $_POST['LastName'];
