@@ -49,7 +49,7 @@
       <script>$(".button-collapse").sideNav();</script>
 
   </header>
-<body background="assets/bg.jpeg" width="100%" height="100%">
+<body background="assets/rearlight.jpg" width="100%" height="100%">
   <main>
     <!--<div class="login">
       <form action="includes/login.inc.php"method="post">
@@ -101,7 +101,7 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="email" name="email" type="email" class="validate">
-              <label for="email">Email</label>
+              <label for="email">E-mail</label>
             </div>
           </div>
           <div class="row">
@@ -115,17 +115,15 @@
               <label for="password">Confirm Password</label>
             </div>
           </div>
-          <form action="includes/logout.inc.php"method="post">
-            <button class="btn waves-effect waves-light" type="submit" name="login-submit">Submit
-              <i class="material-icons right">add</i>
-            </button>
-          </form>
+          <div class="submit">
+            <form action="includes/logout.inc.php"method="post">
+              <button class="btn waves-effect waves-light" type="submit" name="signup-submit">SIGNUP
+                <i class="material-icons right">add</i>
+              </button>
+            </form>
+          </div>
         </form>
       </div>
-    </div>
-    <div class="message">
-      <p>You Are logged out!</p>
-      <p>You are logged in!</p>
     </div>
   </main>
 
