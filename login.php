@@ -18,6 +18,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body ng-app="mainModule" ng-controller="mainController">
+  <header>
   <!-- Navbar -->
   <nav class="z-depth-0">
       <div class="nav-wrapper">

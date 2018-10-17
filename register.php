@@ -18,6 +18,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body ng-app="mainModule" ng-controller="mainController">
+  <header>
   <!-- Navbar -->
   <nav class="z-depth-0">
       <div class="nav-wrapper">
@@ -47,9 +48,8 @@
           <script>$(".button-collapse").sideNav();</script>
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
-
 <main>
-  
+
 </main>
   <!--Footer-->
     <div class="footer">
