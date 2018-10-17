@@ -62,7 +62,7 @@ if (isset($_POST['signup-submit'])) {
         exit();
       }
       else {
-        $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, city) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, City) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../register.php?error=sqlerror02");
