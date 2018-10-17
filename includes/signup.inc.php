@@ -63,7 +63,7 @@ if (isset($_POST['signup-submit'])) {
       }
       else {
 
-        $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, City) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO heroku_11b47e2296993b0.users (FirstName, LastName, email, password, postcode, address, City) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../register.php?error=sqlerror02");
