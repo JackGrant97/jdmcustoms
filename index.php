@@ -53,7 +53,6 @@
         <div class="container">
             <div class="logo">
                 <img src="assets/jdmcustoms.png" width="50%" height="50%">
-
             </div>
         </div>
       </main>

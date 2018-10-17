@@ -51,27 +51,9 @@
   </header>
 <body background="assets/rearlight.jpg" width="100%" height="100%">
   <main>
-    <!--<div class="login">
-      <form action="includes/login.inc.php"method="post">
-        <input type="text"  id="first_name" name="FirstName" placeholder="First Name...">
-        <input type="text" name="LastName"placeholder="Last Name...">
-        <input type="text" name="email" placeholder="E-mail...">
-        <input type="password" name="password" placeholder="Password">
-        <input type="text" name="postcode" placeholder="Postcode">
-        <input type="text" name="address" placeholder="Address">
-        <input type="text" name="City" placeholder="City">
-        <button type="submit" name="login-submit">Login</button>
-      </form>
-      <a href="signup.php">signup</a>
-      <form action="includes/logout.inc.php"method="post">
-        <button type="submit" name="logout-submit">Logout</button>
-      </form>
-    </div>
-    <p>You Are logged out!</p>
-    <p>You are logged in!</p> !-->
     <div class="register">
       <div class="row">
-        <form class="col s12" action="includes/login.inc.php" method="post">
+        <form class="col s12" action="includes/signup.inc.php" method="post">
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" name="FirstName" type="text" class="validate">
