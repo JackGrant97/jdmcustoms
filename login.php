@@ -53,7 +53,7 @@
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
   <main>
-    <div class="register">
+    <div class="login">
       <div class="row">
         <form class="col s12" action="includes/signup.inc.php" method="post">
           <div class="row">
@@ -68,7 +68,7 @@
               <label for="password">Password</label>
             </div>
           </div>
-          <div class="login">
+          <div class="submit">
               <button class="btn waves-effect waves-light" type="submit" name="login-submit">LOGIN
                 <i class="material-icons right">add</i>
               </button>
