@@ -12,7 +12,7 @@ if (isset($_POST['login-submit'])) {
     exit();
   }
   else {
-    $sql = "SELECT * FROM users=? WHERE email=?;";
+    $sql = "SELECT * FROM users WHERE email=?;";
     $stmt = mysqli_stmt_init($con);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("Location: ../login.php?error=sqlerror03");
@@ -29,12 +29,12 @@ if (isset($_POST['login-submit'])) {
           header("Location: ../login.php?error=wrongpassword");
           exit();
         }
-        elseif ($passwordcheck == true) {
+        else if ($passwordcheck == true) {
           session_start();
           $_SESSION['userid'] =  $row['UserID'];
 
           header("Location: ../login.php?login=success");
-          exit()
+          exit();
         }
         else {
           header("Location: ../login.php?error=wrongpassword");
