@@ -53,6 +53,7 @@ if (isset($_POST['signup-submit'])) {
       exit();
     }
     else {
+      //checks if email entered on register page is already in use
       mysqli_stmt_bind_param($stmt, "s", $email);
       mysqli_stmt_execute($stmt);
       mysqli_stmt_store_result($stmt);
