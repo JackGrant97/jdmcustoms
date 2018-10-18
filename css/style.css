@@ -159,9 +159,11 @@ iframe
 
 .submit
 {
-  padding-left: 37%;
+  margin-left: auto;
+  margin-right: auto;
   position: sticky;
   object-position: center;
+  text-align: center;
 }
 
 .logo
@@ -178,6 +180,14 @@ iframe
   border-radius: 5%;
   max-width: 10%;
   max-height: 100%;
-  margin-left: 45%;
+  margin-left: auto;
+  margin-right: auto;
+
+
   position: initial;
+}
+
+.button
+{
+  position: absolute;
 }
