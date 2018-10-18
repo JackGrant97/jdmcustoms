@@ -50,7 +50,34 @@
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
   <main>
-
+    <div class="register">
+      <div class="row">
+        <form class="col s12" action="includes/signup.inc.php" method="post">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" name="email" type="email" class="validate">
+              <label for="email">E-mail</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" name="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div><div class="row">
+            <div class="input-field col s12">
+              <input id="password" name="password-repeat" type="password" class="validate">
+              <label for="password">Confirm Password</label>
+            </div>
+          </div>
+          <div class="submit">
+              <button class="btn waves-effect waves-light" type="submit" name="login-submit">LOGIN
+                <i class="material-icons right">add</i>
+              </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </main>
 
   <!--Footer-->
