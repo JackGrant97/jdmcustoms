@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_POST['login-submit'])) {
 
   require 'dbconnect.php';
@@ -21,7 +20,7 @@ if (isset($_POST['login-submit'])) {
     }
     else {
 
-      mysqli_stmt_bind_param($stmt, "ss", $mail, $mail);
+      mysqli_stmt_bind_param($stmt, "ss", $mail, $password);
       mysqli_stmt_execute($stmt);
       $result = mysqli_stmt_get_result($stmt);
       if ($row = mysqli_fetch_assoc($result)) {
