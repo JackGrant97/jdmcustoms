@@ -1,4 +1,4 @@
-<?php 
+<?php
   session_start();
 ?>
 <html lang="en">
@@ -68,7 +68,7 @@
               <label for="password">Password</label>
             </div>
           </div>
-          <div class="submit">
+          <div class="login">
               <button class="btn waves-effect waves-light" type="submit" name="login-submit">LOGIN
                 <i class="material-icons right">add</i>
               </button>
