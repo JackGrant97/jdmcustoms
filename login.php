@@ -77,16 +77,14 @@
       </div>
     </div>
     <div class="status">
-      <section class="section default">
       <?php
         if (isset($_SESSION['userid'])) {
-          echo '<p class="login-status">You are Logged In!</p>';.
+          echo '<p>You are logged in!</p>';
         }
         else {
-            echo '<p class="login-status>You are Logged Out!</p>';
+          echo '<p>You are logged out!</p>';.
         }
       ?>
-    </section>
     </div>
   </main>
 
