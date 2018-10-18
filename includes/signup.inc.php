@@ -62,7 +62,7 @@ if (isset($_POST['signup-submit'])) {
         exit();
       }
       else {
-
+        //inputs data entered from the register page into the database
         $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, City) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -70,6 +70,7 @@ if (isset($_POST['signup-submit'])) {
           exit();
         }
         else {
+          //Uses BCrypt to hash users password
           $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
 
           mysqli_stmt_bind_param($stmt, "sssssss", $firstname, $lastname, $email, $hashedpassword, $postcode, $address, $city);
