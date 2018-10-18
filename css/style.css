@@ -159,7 +159,9 @@ iframe
 
 .submit
 {
-padding-left: 34%;
+  padding-left: 37%;
+  position: sticky;
+  object-position: center;
 }
 
 .logo
@@ -168,4 +170,14 @@ padding-left: 34%;
 	margin-top: 15%;
 	position: absolute;
 	object-position: center;
+}
+.status
+{
+  background-color: white;
+  text-align: center;
+  border-radius: 5%;
+  max-width: 10%;
+  max-height: 100%;
+  margin-left: 45%;
+  position: initial;
 }
