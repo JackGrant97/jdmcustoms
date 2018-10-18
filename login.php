@@ -77,8 +77,8 @@
       </div>
     </div>
     <div class="status">
-      <?php 
-      if (isset($_SESSION['UserID'])) {
+      <?php
+      if (isset($_SESSION['userid'])) {
         echo "<p><b>You are Logged In!</b></p>";.
       }
       else {
