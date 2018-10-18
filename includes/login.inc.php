@@ -12,7 +12,7 @@ if (isset($_POST['login-submit'])) {
     exit();
   }
   else {
-    $sql = "SELECT * FROM users WHERE email=?;";
+    $sql = "SELECT * FROM users=? WHERE email=?;";
     $stmt = mysqli_stmt_init($con);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("Location: ../login.php?error=sqlerror03");
