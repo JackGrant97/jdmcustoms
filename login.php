@@ -79,7 +79,7 @@
     <div class="status">
       <section class="section default">
       <?php
-        if (isset($_SESSION['UserID'])) {
+        if (isset($_SESSION['userid'])) {
           echo '<p class="login-status">You are Logged In!</p>';.
         }
         else {
