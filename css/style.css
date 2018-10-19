@@ -177,10 +177,11 @@ iframe
 .status
 {
   background-color: white;
-  text-align: center;
+  text-align: top;
   border-radius: 5%;
   max-width: 10%;
   max-height: 100%;
+
   margin-left: auto;
   margin-right: auto;
   position: initial;
@@ -188,5 +189,5 @@ iframe
 
 .button
 {
-  
+
 }
