@@ -161,8 +161,8 @@ iframe
 {
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
   margin-bottom: 30%;
+  padding-bottom: 30%;
   position: sticky;
   object-position: center;
   text-align: center;
