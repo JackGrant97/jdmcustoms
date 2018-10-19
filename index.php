@@ -32,7 +32,14 @@
 				  <li><a href="index.php">Home</a></li>
 					 <li><a href="inventory.php">Inventory</a></li>
 				  <li><a href="about.php">About</a></li>
-          <li><a href="login.php">Login</a></li>
+          <?php
+            if (isset($_SESSION['userid'])) {
+              echo '<li><a href="includes/logout.inc.php">logout</a></li>';
+            }
+            else {
+              echo '<li><a href="login.php">Login</a></li>';
+            }
+           ?>
           <li><a href="register.php">Register</a></li>
 				</ul>
 			</div>
@@ -45,7 +52,14 @@
             <li><a href="inventory.php">Inventory</a></li>
             <li><a href="about.php">About</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="login.php">login</a></li>
+            <?php
+              if (isset($_SESSION['userid'])) {
+                echo '<li><a href="includes/logout.inc.php">logout</a></li>';
+              }
+              else {
+                echo '<li><a href="login.php">Login</a></li>';
+              }
+             ?>
             <li><a href="register.php">Register</a></li>
           </div>
         </ul>
@@ -70,7 +84,14 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="inventory.php">Inventory</a></li>
                         <li><a href="about.php">About</a></li>
-                        <li><a href="login.php">login</a></li>
+                        <?php
+                          if (isset($_SESSION['userid'])) {
+                            echo '<li><a href="includes/logout.inc.php">logout</a></li>';
+                          }
+                          else {
+                            echo '<li><a href="login.php">Login</a></li>';
+                          }
+                         ?>
                         <li><a href="register.php">Register</a></li>
                     </div>
                     <div class="col l4 offset-l2 s12">
