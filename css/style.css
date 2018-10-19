@@ -162,7 +162,7 @@ iframe
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
-  position: absolute;
+  position: a;
   object-position: center;
   text-align: center;
 }
@@ -181,7 +181,6 @@ iframe
   border-radius: 5%;
   max-width: 10%;
   max-height: 100%;
-
   margin-left: auto;
   margin-right: auto;
   position: initial;
@@ -189,5 +188,5 @@ iframe
 
 .button
 {
-
+  position: absolute;
 }
