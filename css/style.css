@@ -162,7 +162,7 @@ iframe
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
-  position: sticky;
+  position: absolute;
   object-position: center;
   text-align: center;
 }
