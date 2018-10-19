@@ -32,11 +32,16 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="inventory.php">Inventory</a></li>
         <li><a href="about.php">About</a></li>
-        
 
+
+
+        </form>
         <?php
           if (isset($_SESSION['userid'])) {
-            echo '<li><a href="#">logout</a></li>';
+            echo '
+            <form action="includes/logout.inc.php" method="post">
+            <li><a href="#">logout</a></li>
+            </form>';
           }
           else {
             echo '<li><a href="login.php">Login</a></li>';
