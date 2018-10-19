@@ -38,10 +38,7 @@
         </form>
         <?php
           if (isset($_SESSION['userid'])) {
-            echo '
-            <form action="includes/logout.inc.php" method="post">
-            <li><a href="#">logout</a></li>
-            </form>';
+            echo '<li><a href="includes/logout.inc.php">logout</a></li>';
           }
           else {
             echo '<li><a href="login.php">Login</a></li>';
