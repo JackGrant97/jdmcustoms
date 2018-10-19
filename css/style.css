@@ -161,6 +161,8 @@ iframe
 {
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   position: sticky;
   object-position: center;
   text-align: center;
@@ -182,8 +184,6 @@ iframe
   max-height: 100%;
   margin-left: auto;
   margin-right: auto;
-
-
   position: initial;
 }
 
