@@ -162,9 +162,8 @@ iframe
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
-  position: a;
   object-position: center;
-  text-align: center;
+  text-align: top;
 }
 
 .logo
