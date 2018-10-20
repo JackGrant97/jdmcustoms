@@ -68,10 +68,28 @@
     </header>
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
-
-
-
 	 <main>
+     <?php
+       require 'dbconnect.php';
+
+       $itemID = $_POST['itemID'];
+       $itemName = $_POST['itemName'];
+       $itemPrice = $_POST['itemPrice'];
+       $itemImage = $_POST['itemImage'];
+
+       $sql = "SELECT * FROM cart ORDER BY ItemID ASC"
+       $stmt = mysqli_stmt_init($con);
+       if (!mysqli_stmt_prepare($stmt, $sql)) {
+         header("Location: ../inventory.php?error=sqlerror04");
+         exit();
+       }
+       $result = mysqli_stmt_get_result($stmt);
+       if ($result) {
+         while ($product = mysqli_fetch_assoc($result)) {
+           // code...
+         }
+       }
+      ?>
 	  <!--Cards-->
 	  <div class="container">
 	   <div class="content">
