@@ -1,5 +1,5 @@
 <?php
-  require 'dbconnect.php';
+  
   $query = 'SELECT * FROM cart ORDER by itemID ASC';
   $result = mysqli_query($con, $query);
 
