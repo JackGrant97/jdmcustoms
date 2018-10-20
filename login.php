@@ -95,7 +95,7 @@
       <?php
         if (isset($_SESSION['userid'])) {
           echo $firstname['Firstname'];
-          echo '<p><b>You are Logged In!</b></p> <?php echo $firstname['Firstname']; ?>';
+          echo '<p><b>You are Logged In!</b></p>';
 
         }
         else {
