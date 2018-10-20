@@ -82,9 +82,10 @@
 
            ?>
            <div class="container">
-       	
+
 
                     <div class="col-sm-4 col-md-3">
+                      <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
      			              <div class="card reveal-panel">
      			                  <div class="card-image waves-effect waves-block waves-light">
      				                <img class="activator" src="<?php echo $product['image1']?>">
@@ -99,6 +100,7 @@
                      				</p>
                    			  </div>
      			            </div>
+                    </form>
                   </div>
 
 
