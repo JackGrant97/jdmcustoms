@@ -68,24 +68,24 @@
     </header>
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
+
+    <?php
+
+      require 'dbconnect.php';
+      $query = 'SELECT * FROM cart ORDER by itemID ASC';
+      $result = mysqli_query($con, $query);
+
+      if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+          while ($product = mysqli_fetch_assoc($result)) {
+            ?>
+
+            <?php
+          }
+        }
+      }
+      ?>
 	 <main>
-
-     <?php
-
-       require 'dbconnect.php';
-       $query = 'SELECT * FROM cart ORDER by itemID ASC';
-       $result = mysqli_query($con, $query);
-
-       if ($result) {
-         if (mysqli_num_rows($result) > 0) {
-           while ($product = mysqli_fetch_assoc($result)) {
-             ?>
-
-             <?php
-           }
-         }
-       }
-       ?>
 	  <!--Cards-->
 	  <div class="container">
 	   <div class="content">
