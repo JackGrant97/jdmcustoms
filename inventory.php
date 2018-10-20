@@ -84,7 +84,7 @@
            <div class="container">
        	     <div class="content">
        		      <div class="row">
-                    <div class="col s10 m3">
+                    <div class="col s10 m5">
      			              <div class="card reveal-panel">
      			                  <div class="card-image waves-effect waves-block waves-light">
      				                <img class="activator" src="<?php echo $product['image1']?>">
