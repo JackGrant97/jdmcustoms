@@ -82,7 +82,7 @@
            print_r($product);
            ?>
            <div class="col s10 m4">
-             <form method="post" action="inventory.php?=actionid=<?php echo $product['itemID'];?>">
+             <form method="post" action="inventory.php?=actionadd&itemID=<?php echo $product['itemID'];?>">
            <div class="card reveal-panel">
              <div class="card-image waves-effect waves-block waves-light">
              <img class="activator" src="<?php echo $product['image1'];?>">
