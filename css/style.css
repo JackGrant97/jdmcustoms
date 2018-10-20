@@ -197,7 +197,7 @@ iframe
   background-color: #f1f1f1;
   border-radius: 5px;
   padding: 16px;
-  width: 50%;
+
   margin-bottom: 20px;
 }
 
@@ -206,7 +206,7 @@ iframe
     font-weight: bold;
     }
 
-  .card reveal-panel
+  .card 
   {
     width: 50%;
     float: left;
