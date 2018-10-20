@@ -81,12 +81,11 @@
            while($product = mysqli_fetch_assoc($result)):
            print_r($product);
            ?>
-            <div class="products">
-              <img src="<?php echo $product['image1'];?>" class="img-responsive"/>
-              <h4 class="text-info"><?php echo $product['image1'];?></h4>
-              <input type="text" name="quantity" class="form-control" value="1">
-            </div>
-
+           <li><a href="index.php">Home</a></li>
+           <li><div class="divider"></div></li>
+           <li><a href="inventory.php">Inventory</a></li>
+           <li><a href="about.php">About</a></li>
+           <li><div class="divider"></div></li>
            <?php
          endwhile;
        endif;
