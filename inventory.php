@@ -70,7 +70,7 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="container">
-    
+
 
 
 
@@ -81,7 +81,7 @@
                    <img class="activator" src="assets/cpu_thumb.png">
                  </div>
                  <div class="card-content">
-                     <span class="card-title activator grey-text text-lighten-3">CPU<i class="material-icons right">more_vert</i></span>
+                     <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemName'];?><i class="material-icons right">more_vert</i></span>
                      <p class="grey-text text-lighten-3"><a href="cpu.html">Click Here to See Reviews</a></p>
                  </div>
                  <div class="card-reveal">
