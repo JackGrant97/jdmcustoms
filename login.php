@@ -100,8 +100,6 @@
           echo '<p><b>You are Logged out!</b></p>';
         }
        ?>
-       <!-- <p><b>You are Logged In!</b></p>
-       <p><b>You are Logged Out!</b></p>-->
     </div>
   </main>
 
