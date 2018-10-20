@@ -70,16 +70,7 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="container">
-    <?php
-    require 'dbconnect.php';
-    $query = 'SELECT * FROM cart ORDER by itemID ASC';
-    $result = mysqli_query($con, $query);
-
-    if ($result):
-      if (mysqli_num_rows($result) > 0):
-       while ($product = mysqli_fetch_assoc($result)):
-       print_r($product);
-       ?>
+    
 
 
 
