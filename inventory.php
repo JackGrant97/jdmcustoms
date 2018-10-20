@@ -81,13 +81,16 @@
            while($product = mysqli_fetch_assoc($result)):
            print_r($product);
            ?>
+           <div class="container">
+       	   <div class="content">
+       		  <div class="row">
            <div class="col s10 m4">
      			<div class="card reveal-panel">
      			  <div class="card-image waves-effect waves-block waves-light">
      				<img class="activator" src="<?php echo $product['image1']?>">
      			  </div>
      			<div class="card-content">
-     				  <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemID']?><i class="material-icons right">more_vert</i></span>
+     				  <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemName']?><i class="material-icons right">more_vert</i></span>
      				  <p class="grey-text text-lighten-3"><a href="cpu.html">Click Here to See Reviews</a></p>
      			</div>
      			  <div class="card-reveal">
@@ -96,7 +99,10 @@
      				</p>
      			  </div>
      			</div>
-          </
+        </div>
+        </div>
+          </div>
+            </div>
            <?php
          endwhile;
        endif;
