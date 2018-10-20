@@ -81,13 +81,10 @@
            while($product = mysqli_fetch_assoc($result)):
 
            ?>
-           <div class="container">
-
-
                     <div class="col-sm-4 col-md-3">
                       <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
      			              <div class="card reveal-panel">
-     			                  <div class="card-image waves-effect waves-block waves-light">
+     			                <div class="card-image waves-effect waves-block waves-light">
      				                <img class="activator" src="<?php echo $product['image1']?>">
      			               </div>
                      			<div class="card-content">
@@ -102,9 +99,6 @@
      			            </div>
                     </form>
                   </div>
-
-
-            </div>
            <?php
          endwhile;
        endif;
