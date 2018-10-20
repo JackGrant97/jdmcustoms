@@ -77,12 +77,13 @@
 	   <div class="content">
 		  <div class="row">
 		  <div class="col s10 m4">
+      <form method="post" action="includes/cart.inc.php?action=id<?php echo $itemID['itemID']; ?>">
 			<div class="card reveal-panel">
 			  <div class="card-image waves-effect waves-block waves-light">
 				<img class="activator" src="assets/cpu_thumb.png">
 			  </div>
 			<div class="card-content">
-				  <span class="card-title activator grey-text text-lighten-3">CPU<i class="material-icons right">more_vert</i></span>
+				  <span class="card-title activator grey-text text-lighten-3"><?php echo $itemName['itemName']; ?><i class="material-icons right">more_vert</i></span>
 				  <p class="grey-text text-lighten-3"><a href="cpu.html">Click Here to See Reviews</a></p>
 			</div>
 			  <div class="card-reveal">
