@@ -68,8 +68,8 @@
     </header>
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
-
-
+	 <main>
+     <div class="container"
      <?php
 
        require 'dbconnect.php';
@@ -104,7 +104,7 @@
          endif;
        endif;
        ?>
-       <main>
+     </div>
 	  <!--Cards
 	  <div class="container">
 	   <div class="content">
