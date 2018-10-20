@@ -69,6 +69,8 @@
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
+     <?php
+      ?>
 	  <!--Cards-->
 	  <div class="container">
 	   <div class="content">
