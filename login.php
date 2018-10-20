@@ -101,7 +101,7 @@
           echo '<p><b>You are Logged out!</b></p>';
         }
        ?>
-       <p><?php echo $firstname['Firstname'];?>
+       <p><?php echo $firstname['Firstname'];?></p>
     </div>
   </main>
 
