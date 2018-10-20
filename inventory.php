@@ -69,7 +69,7 @@
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
-     <div class="container"
+     <div class="container">
      <?php
 
        require 'dbconnect.php';
