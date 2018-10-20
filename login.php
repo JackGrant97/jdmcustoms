@@ -94,7 +94,6 @@
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
-          echo $firstname['Firstname'];
           echo '<p><b>You are Logged In!</b></p>';
 
         }
@@ -102,7 +101,7 @@
           echo '<p><b>You are Logged out!</b></p>';
         }
        ?>
-
+       <p><?php echo $firstname['Firstname'];?>
     </div>
   </main>
 
