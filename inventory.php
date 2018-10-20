@@ -84,7 +84,7 @@
              <form method="post" action="inventory.php?=actionid=<?php echo $product['itemID'];?>">
            <div class="card reveal-panel">
              <div class="card-image waves-effect waves-block waves-light">
-             <img class="activator" src="<?php echo $product['image1'];?>>
+             <img class="activator" src="<?php echo $product['image1'];?>">
              </div>
            <div class="card-content">
                <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemName'];?><i class="material-icons right">more_vert</i></span>
