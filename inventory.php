@@ -87,7 +87,7 @@
 				  <p class="grey-text text-lighten-3"><a href="cpu.html">Click Here to See Reviews</a></p>
 			</div>
 			  <div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">CPU<i class="material-icons right">close</i></span>
+				<span class="card-title grey-text text-darken-4"><?php echo $itemName['itemName']; ?><i class="material-icons right">close</i></span>
 				<p>A CPU also known as a Central Processing Unit, or processor is referred to as the brain of a computer system. A CPU completes most calculations. Without a CPU a computer system will be unable to operate as a CPU allocates tasks to each component of the system, this includes hard disks, RAM, GPU's etc.
 				</p>
 			  </div>
