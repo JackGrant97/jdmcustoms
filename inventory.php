@@ -67,7 +67,7 @@
             <script>$(".button-collapse").sideNav();</script>
     </header>
 
-  <body background="assets/Backg.jpg" text="white">
+  <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <?php
 
