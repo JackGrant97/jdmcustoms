@@ -69,12 +69,7 @@
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 
-    <?php
 
-      require 'dbconnect.php';
-      $query = 'SELECT * FROM cart ORDER by itemID ASC';
-      $result = mysqli_query($con, $query);
-?>
 
 	 <main>
 	  <!--Cards-->
