@@ -78,8 +78,8 @@
 
        if ($result):
          if (mysqli_num_rows($result) > 0):
-           while ($product = mysqli_fetch_assoc($result)):
-             print_r($product);
+          while ($product = mysqli_fetch_assoc($result)):
+          print_r($product);
              ?>
              <div class="col s10 m4">
               <form method="post" action="inventory.php=add&itemid=<?php echo $product['itemID'];?>">
