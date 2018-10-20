@@ -199,3 +199,14 @@ iframe
   padding: 16px;
   margin-bottom: 20px;
 }
+
+.card-content{
+    text-align: center;
+    font-weight: bold;
+    }
+
+  .Cards
+  {
+    width: 50%;
+    float: left;
+  }
