@@ -77,8 +77,10 @@
 
        if ($result) {
          if (mysqli_num_rows($result) > 0) {
+           print_r($product);
            ?>
            <div class="col s10 m4">
+             <form method="post" action="inventory.php?=actionid=<?php echo $product['itemID'];?>">
            <div class="card reveal-panel">
              <div class="card-image waves-effect waves-block waves-light">
              <img class="activator" src="assets/cpu_thumb.png">
@@ -93,12 +95,13 @@
              </p>
              </div>
            </div>
+         </form>
            </div>
            <?php
          }
        }
      ?>
-	  <!--Cards-->
+	  <!--Cards
 	  <div class="container">
 	   <div class="content">
 		  <div class="row">
@@ -202,7 +205,7 @@
 		  </div>
 		</div>
 		  </div>
-	  	</div>
+    </div> -->
 	  </main>
 
 
