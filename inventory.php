@@ -80,8 +80,8 @@
           $result = mysqli_query($con, $query);
 
           if ($result) {
-            if (mysqli_num_rows($result) > 0) :
-              while ($product = mysqli_fetch_assoc($result)) :
+            if (mysqli_num_rows($result) > 0) {
+              while ($product = mysqli_fetch_assoc($result)) {
                 ?>
               <div class="col s10 m4">
                <div class="card reveal-panel">
@@ -100,9 +100,9 @@
                 </div>
                </div>
                 <?php
-              endwhile;
-            endif;
-          endif;
+                }
+              }
+            }
           ?>
 
 		  <div class="col s10 m4">
