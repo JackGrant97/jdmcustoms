@@ -69,6 +69,7 @@
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
+     <div class="container">
      <?php
        $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
        mysqli_error($con));
@@ -83,24 +84,25 @@
            <div class="col s10 m4">
      			<div class="card reveal-panel">
      			  <div class="card-image waves-effect waves-block waves-light">
-     				<img class="activator" src="assets/cpu_thumb.png">
+     				<img class="activator" src="<?php echo $product['image1']?>">
      			  </div>
      			<div class="card-content">
-     				  <span class="card-title activator grey-text text-lighten-3">CPU<i class="material-icons right">more_vert</i></span>
+     				  <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemID']?><i class="material-icons right">more_vert</i></span>
      				  <p class="grey-text text-lighten-3"><a href="cpu.html">Click Here to See Reviews</a></p>
      			</div>
      			  <div class="card-reveal">
-     				<span class="card-title grey-text text-darken-4">CPU<i class="material-icons right">close</i></span>
+     				<span class="card-title grey-text text-darken-4"><?php echo $product['itemName']?><i class="material-icons right">close</i></span>
      				<p>A CPU also known as a Central Processing Unit, or processor is referred to as the brain of a computer system. A CPU completes most calculations. Without a CPU a computer system will be unable to operate as a CPU allocates tasks to each component of the system, this includes hard disks, RAM, GPU's etc.
      				</p>
      			  </div>
      			</div>
-        </div>
+          </
            <?php
          endwhile;
        endif;
      endif;
      ?>
+   </div>
 	  <!--Cards
 	  <div class="container">
 	   <div class="content">
