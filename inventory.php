@@ -69,7 +69,6 @@
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
-     <div class="container">
      <?php
        $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
        mysqli_error($con));
@@ -87,7 +86,6 @@
        endif;
      endif;
      ?>
-   </div>
 	  <!--Cards
 	  <div class="container">
 	   <div class="content">
