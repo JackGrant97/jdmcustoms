@@ -74,7 +74,7 @@
 	   <div class="content">
 		  <div class="row">
 		  <div class="col s10 m4">
-      <form method="post" action="includes/cart.inc.php"
+      <form method="post" action="includes/cart.inc.php">
 			<div class="card reveal-panel">
 			  <div class="card-image waves-effect waves-block waves-light">
 				<img class="activator" src="assets/cpu_thumb.png">
