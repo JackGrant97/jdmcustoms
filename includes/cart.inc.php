@@ -1,7 +1,7 @@
 <?php
 
   require 'dbconnect.php';
-  $query = 'SELECT * FROM cart ORDERY by id ASC';
+  $query = 'SELECT * FROM cart ORDER by id ASC';
   $result = mysqli_query($con, $query);
 
   if ($result) {
