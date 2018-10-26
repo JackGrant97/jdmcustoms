@@ -116,7 +116,7 @@
             </div>
           </div>
           <div class="submit">
-              <button class="btn waves-effect waves-light" type="submit" name="signup-submit">SIGNUP
+              <button class="waves-effect waves-light btn" type="submit" name="signup-submit">SIGNUP
                 <i class="material-icons right">add</i>
               </button>
           </div>
