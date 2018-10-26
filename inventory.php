@@ -89,7 +89,7 @@
      				                <img class="activator" src="<?php echo $product['image1']?>">
      			               </div>
                      			<div class="card-content">
-                     				  <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
+                     				  <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?> Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
                      				  <p class="grey-text text-lighten-3"><a href="cpu.html">Click Here to See Reviews</a></p>
                      			</div>
                    			  <div class="card-reveal">
