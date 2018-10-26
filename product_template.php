@@ -85,7 +85,7 @@
           <div class="container">
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Product Description</div>
+                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Vehicle Details</div>
                   <div class="collapsible-body">
                     <div class="row">
                         <div class="title">
@@ -116,7 +116,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Product Review</div>
+                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Owner Overview</div>
                   <div class="collapsible-body">
                     <div class="row">
                         <!--<div class="title">
