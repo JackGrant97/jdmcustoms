@@ -156,6 +156,7 @@
                   </div>
                 </li>
                 <li>
+                  <a href="#!" class="btn waves-effect">Buy Now</a>
                   <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Where To Buy</div>
                   <div class="collapsible-body">
                     <a href="#!" class="btn waves-effect">Buy Now</a>
