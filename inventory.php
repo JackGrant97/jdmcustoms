@@ -82,7 +82,7 @@
              if(mysqli_num_rows($result) > 0):
                while($product = mysqli_fetch_assoc($result)):
             ?>
-                <div class="col s4 col m4">
+                <div class="col s5 col m5">
                   <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
