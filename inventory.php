@@ -101,6 +101,7 @@
                       </div>
                     </form>
                   </div>
+                    <div class="col s5 col m5"></div>
                 </div>
            <?php
          endwhile;
