@@ -92,19 +92,17 @@
                            <h3>Product Title</h3>
                         </div>
                       <div class="col s6">
-                            <b>Title</b>
-                            <br>Make:
-                            <br>Model:
-                            <br>Year:
-                            <br>Millage:
-                            <br>Engine Size:
-                            <br>WHP:
+                            <b><br>Make: </br>
+                            <b><br>Model: </br>
+                            <b><br>Year: </br>
+                            <b><br>Millage: </br>
+                            <b><br>Engine Size: </br>
+                            <b><br>WHP: </br>
                       </div>
                       <div class="col s6">
-                            <b>Title</b>
-                            <br>Fuel Type:
-                            <br>Transmission:
-                            <br>Price:                        
+                            <b><br>Fuel Type: </br>
+                            <b><br>Transmission: </br>
+                            <b><br>Price: </br>
                       </div>
                     </div>
                   </div>
