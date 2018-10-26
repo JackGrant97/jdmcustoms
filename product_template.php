@@ -81,16 +81,6 @@
          <script>
               $('.carousel.carousel-slider').carousel({fullWidth: true});
         </script>
-        <?php
-          $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
-          mysqli_error($con));
-          $query = 'SELECT * FROM products ORDER by itemID ASC';
-          $result = mysqli_query($con, $query);
-
-          if ($result):
-            if(mysqli_num_rows($result) > 0):
-              while($product = mysqli_fetch_assoc($result)):
-           ?>
      <div class="info">
           <div class="container">
             <ul class="collapsible" data-collapsible="accordion">
@@ -99,7 +89,7 @@
                   <div class="collapsible-body">
                     <div class="row">
                         <div class="title">
-                           <h3><?php echo $product['itemMake']?></h3>
+                           <h3>Product Title</h3>
                         </div>
                       <div class="col s6">
                             <b>Title</b>
@@ -174,11 +164,6 @@
             </ul>
         </div>
     </div>
-    <?php
-  endwhile;
-endif;
-endif;
-?>
       <script>
             $(document).ready(function(){
             $('.collapsible').collapsible();
