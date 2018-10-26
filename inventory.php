@@ -82,7 +82,7 @@
         ?>
                 <div class="row">
                   <div class="section">
-                    <div class="col s5 col m5">
+                    <div class="col s3 col m3">
                       <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                         <div class="products">
      			              <div class="card reveal-panel">
