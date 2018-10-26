@@ -154,11 +154,13 @@
                         -->
                     </div>
                   </div>
+                </div>
+                </li>
+                <div class="container">
                   <div class="buy">
                     <a href="#!" class="btn waves-effect">Buy Now</a>
                   </div>
-                </div>
-                </li>
+              </div>
             </ul>
         </div>
     </div>
