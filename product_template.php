@@ -172,7 +172,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="inventory.php">Inventory</a></li>
                         <li><a href="about.php">About</a></li>
-                        <<?php
+                        <?php
                           if (isset($_SESSION['userid'])) {
                             echo '<li><a href="includes/logout.inc.php">logout</a></li>';
                           }
