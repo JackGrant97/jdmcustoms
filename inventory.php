@@ -91,7 +91,7 @@
      			             </div>
                      	 <div class="card-content">
                      		 <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?> Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
-                     		 <p class="grey-text text-lighten-3"><a href="cpu.html">Click Here to See Reviews</a></p>
+                     		 <p class="grey-text text-lighten-3"><a href="product_template.php">Click Here to See Reviews</a></p>
                      	 </div>
                    		 <div class="card-reveal">
                      	   <span class="card-title grey-text text-darken-4"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?> Price: £<?php echo $product['itemPrice']?><i class="material-icons right">close</i></span>
