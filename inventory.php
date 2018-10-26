@@ -101,7 +101,6 @@
                       </div>
                     </form>
                   </div>
-                  <div class="section">
                 </div>
            <?php
          endwhile;
