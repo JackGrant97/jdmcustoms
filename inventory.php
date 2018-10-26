@@ -109,6 +109,7 @@
        endif;
      endif;
      ?>
+       <div class="divider"></div>
    </div>
 	  <!--Cards
 	  <div class="container">
