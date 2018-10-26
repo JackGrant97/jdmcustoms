@@ -93,24 +93,18 @@
                         </div>
                       <div class="col s6">
                             <b>Title</b>
-                            <!--Specs
-                            <br>Product Collection: 4th Generation Intel® Core™ i7 Processors
-                            <br>Code Name: Haswell
-                            <br>Processor Type: Desktop
-                            <br>Processor Number: i7-4770K
-                            <br>Socket Type: LGA 1150
-                            <br>Launch Date: Q2'13 -->
+                            <br>Make:
+                            <br>Model:
+                            <br>Year:
+                            <br>Millage:
+                            <br>Engine Size:
+                            <br>WHP:
                       </div>
                       <div class="col s6">
                             <b>Title</b>
-                            <!--Specs
-                            <br>Cores: 4
-                            <br>Threads: 8
-                            <br>Processor Base Frequency: 3.50 GHz
-                            <br>Max Turbo Frequency: 3.90 GHz
-                            <br>Cache: 8 MB SmartCache
-                            <br>Memory Type: DDR3
-                            <br>TDP: 84 W -->
+                            <br>Fuel Type:
+                            <br>Transmission:
+                            <br>Price:                        
                       </div>
                     </div>
                   </div>
