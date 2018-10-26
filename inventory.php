@@ -69,6 +69,20 @@
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
+     <div class="row">
+     <div class="col s1">1</div>
+     <div class="col s1">2</div>
+     <div class="col s1">3</div>
+     <div class="col s1">4</div>
+     <div class="col s1">5</div>
+     <div class="col s1">6</div>
+     <div class="col s1">7</div>
+     <div class="col s1">8</div>
+     <div class="col s1">9</div>
+     <div class="col s1">10</div>
+     <div class="col s1">11</div>
+     <div class="col s1">12</div>
+   </div>
      <div class="container">
      <?php
        $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
