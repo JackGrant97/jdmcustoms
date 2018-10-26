@@ -89,7 +89,7 @@
                   <div class="collapsible-body">
                     <div class="row">
                         <div class="title">
-                           <h3>Product Title</h3>
+                           <h3><?php echo $product['itemMake']?></h3>
                         </div>
                       <div class="col s6">
                             <b>Title</b>
