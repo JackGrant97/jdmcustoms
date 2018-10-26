@@ -156,8 +156,9 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#!" class="btn waves-effect">Buy Now</a>
-                </div>
+                  <div class="buy">
+                    <a href="#!" class="btn waves-effect">Buy Now</a>
+                  </div>
                 </li>
             </ul>
         </div>
