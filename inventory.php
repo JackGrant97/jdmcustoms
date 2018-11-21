@@ -62,7 +62,7 @@
                 echo '<li><a href="includes/signup.inc.php">Register</a></li>';
               }
              ?>
-            
+
           </div>
         </ul>
             <script>$(".button-collapse").sideNav();</script>
@@ -84,7 +84,7 @@
                while($product = mysqli_fetch_assoc($result)):
             ?>
                 <div class="col s4 col m4">
-                  <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
+                  <form method="post" action="product_template.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
      			             <div class="card-image waves-effect waves-block waves-light">
