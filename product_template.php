@@ -72,7 +72,7 @@
         <div class="maincontent">
           <?php
 
-            $query = "SELECT * FROM products WHERE itemID='{$itemID}";
+            $query = 'SELECT * FROM products WHERE itemID='{$itemID};
             $result = mysqli_query($con, $query);
 
             if ($result):
