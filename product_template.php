@@ -69,17 +69,18 @@
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
-      <div class="slide">
-      <div class="container">
-            <div class="carousel carousel-slider center" data-indicators="true">
-               <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/900x500"></a>
-                  <a class="carousel-item" href="#two!"><img src="http://via.placeholder.com/900x500"></a>
-                  <a class="carousel-item" href="#three!"><img src="http://via.placeholder.com/900x500"></a>
-                  <a class="carousel-item" href="#four!"><img src="http://via.placeholder.com/900x500"></a>
+        <div class="maincontent">
+          <div class="slide">
+            <div class="container">
+                <div class="carousel carousel-slider center" data-indicators="true">
+                   <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/900x500"></a>
+                      <a class="carousel-item" href="#two!"><img src="http://via.placeholder.com/900x500"></a>
+                      <a class="carousel-item" href="#three!"><img src="http://via.placeholder.com/900x500"></a>
+                      <a class="carousel-item" href="#four!"><img src="http://via.placeholder.com/900x500"></a>
+                </div>
             </div>
-        </div>
-     </div>
-    </div>
+         </div>
+
          <script>
               $('.carousel.carousel-slider').carousel({fullWidth: true});
         </script>
