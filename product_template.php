@@ -80,7 +80,7 @@
             if ($result):
               if(mysqli_num_rows($result) > 0):
                 while($product = mysqli_fetch_assoc($result)):
-          
+
             $_GET['itemID'];
 
              ?>
@@ -172,6 +172,11 @@
               </div>
             </ul>
         </div>
+        <?php
+      endwhile;
+    endif;
+  endif;
+  ?>
     </div>
       <script>
             $(document).ready(function(){
