@@ -36,13 +36,12 @@
           <?php
             if (isset($_SESSION['userid'])) {
               echo '<li><a href="includes/logout.inc.php">logout</a></li>';
-              echo '<li><a href="includes/signup.inc.php">Register</a></li>';
             }
             else {
               echo '<li><a href="login.php">Login</a></li>';
+              echo '<li><a href="includes/signup.inc.php">Register</a></li>';
             }
            ?>
-          <li><a href="register.php">Register</a></li>
 				</ul>
 			</div>
 		</nav>
