@@ -67,21 +67,6 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-    <?php
-    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
-    mysqli_error($con));
-    if (isset($_POST['itemID']))
-    {
-       $itemID = $_POST['itemID'];
-       $query = 'SELECT * FROM products WHERE itemID = '. $itemID;
-
-       $result = mysqli_query($con, $query);
-
-       if ($result):
-         if(mysqli_num_rows($result) > 0):
-           while($product = mysqli_fetch_assoc($result)):
-    }
-    ?>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
       <div class="slide">
