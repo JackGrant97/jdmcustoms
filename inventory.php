@@ -59,9 +59,10 @@
               }
               else {
                 echo '<li><a href="login.php">Login</a></li>';
+                echo '<li><a href="includes/signup.inc.php">Register</a></li>';
               }
              ?>
-            <li><a href="register.php">Register</a></li>
+            
           </div>
         </ul>
             <script>$(".button-collapse").sideNav();</script>
@@ -234,9 +235,10 @@
                           }
                           else {
                             echo '<li><a href="login.php">Login</a></li>';
+                            echo '<li><a href="includes/signup.inc.php">Register</a></li>';
                           }
                          ?>
-                        <li><a href="register.php">Register</a></li>
+
                     </div>
                     <div class="col l4 offset-l2 s12">
                       <h5 class="white-text">Links</h5>
