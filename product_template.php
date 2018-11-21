@@ -79,7 +79,7 @@
 
           if ($result):
             if(mysqli_num_rows($result) > 0):
-              while($product = mysqli_fetch_array($result)):
+              while($product = mysqli_fetch_assoc($result)):
            ?>
           <div class="slide">
             <div class="container">
