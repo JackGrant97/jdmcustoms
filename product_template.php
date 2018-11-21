@@ -102,7 +102,7 @@
                   <div class="collapsible-body">
                     <div class="row">
                         <div class="title">
-                           <h3><?php echo $product['itemMake']?></h3>
+                           <h3><?php echo $product['itemMake']?></h3> <?php echo $product['itemModel']?>
                         </div>
                       <div class="col s6">
                             <b><br>Make:</b> <?php echo $product['itemMake']?>
