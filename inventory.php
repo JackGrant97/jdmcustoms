@@ -92,7 +92,7 @@
      			             </div>
                      	 <div class="card-content">
                      		 <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
-                     		 <p method="post" action="inventory?actionid<?php echo $product['itemID'];?>" class="waves-effect waves-light btn"><a href="product_template.php">More Details</a></p>
+                     		 <p method="post" action="product_template?actionid<?php echo $product['itemID'];?>" class="waves-effect waves-light btn"><a href="product_template.php">More Details</a></p>
                      	 </div>
                    		 <div class="card-reveal">
                      	   <span class="card-title grey-text text-darken-4"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">close</i></span>
