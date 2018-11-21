@@ -69,13 +69,7 @@
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
-        <?php
-          $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
-          mysqli_error($con));
-          $productid = $_REQUEST['itemID']''
-          $result = mysqli_query( "SELECT * FROM products WHERE itemID ='{$productid}");
-          $product = mysqli_fetch_assoc($result)):
-        ?>
+      
       <div class="slide">
       <div class="container">
             <div class="carousel carousel-slider center" data-indicators="true">
