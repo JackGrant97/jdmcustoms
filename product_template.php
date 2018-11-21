@@ -73,12 +73,12 @@
           <?php
           $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
           mysqli_error($con));
+
           $id = intval($_GET['itemID']);
-          $query = mysqli_query($con,"SELECT * FROM products WHERE itemID = ".$id);
-
-
-            if(mysqli_num_rows($query) > 0):
-            $product = mysqli_fetch_assoc($query):
+          $sql = mysqli_query($con,"SELECT * FROM products WHERE itemID = ".$id);
+          if(mysqli_num_rows($sql)){
+            $product = mysqli_fetch_array($sql);
+          }
            ?>
           <div class="slide">
             <div class="container">
@@ -168,11 +168,7 @@
               </div>
             </ul>
         </div>
-        <?php
-      endwhile;
-    endif;
-  endif;
-  ?>
+
     </div>
       <script>
             $(document).ready(function(){
