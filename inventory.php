@@ -79,9 +79,13 @@
            $query = 'SELECT * FROM products ORDER by itemID ASC';
            $result = mysqli_query($con, $query);
 
-           if ($result):
-             if(mysqli_num_rows($result) > 0):
-               while($product = mysqli_fetch_assoc($result)):
+           if ($result){
+             if(mysqli_num_rows($result) > 0){
+               while($product = mysqli_fetch_assoc($result)){
+
+                }
+               }
+             }
             ?>
                 <div class="col s4 col m4">
                   <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
