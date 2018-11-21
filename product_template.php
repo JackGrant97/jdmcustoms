@@ -70,6 +70,9 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
         <div class="maincontent">
+          <?php
+          $_GET['itemID']
+           ?>
           <div class="slide">
             <div class="container">
                 <div class="carousel carousel-slider center" data-indicators="true">
