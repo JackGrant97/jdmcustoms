@@ -72,6 +72,8 @@
         <div class="maincontent">
           <?php
           $_GET['itemID']
+          $query = 'SELECT * FROM products ORDER by itemID ASC';
+          $result = mysqli_query($con, $query);
            ?>
           <div class="slide">
             <div class="container">
