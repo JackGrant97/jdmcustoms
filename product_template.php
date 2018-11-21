@@ -41,7 +41,7 @@
               echo '<li><a href="includes/signup.inc.php">Register</a></li>';
             }
            ?>
-          
+
 				</ul>
 			</div>
 		</nav>
@@ -67,12 +67,25 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
+    <?php
+    if (isset($_POST['itemID']))
+    {
+       $itemID = $_POST['itemID'];
+       $query = 'SELECT * FROM products WHERE itemID = '. $itemID;
+
+       $result = mysqli_query($con, $query);
+
+       if ($result):
+         if(mysqli_num_rows($result) > 0):
+           while($product = mysqli_fetch_assoc($result)):
+    }
+    ?>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
       <div class="slide">
       <div class="container">
             <div class="carousel carousel-slider center" data-indicators="true">
-               <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/900x500"></a>
+               <a class="carousel-item" href="#one!"><img src="<?php echo $product['image1']?>"></a>
                   <a class="carousel-item" href="#two!"><img src="http://via.placeholder.com/900x500"></a>
                   <a class="carousel-item" href="#three!"><img src="http://via.placeholder.com/900x500"></a>
                   <a class="carousel-item" href="#four!"><img src="http://via.placeholder.com/900x500"></a>
