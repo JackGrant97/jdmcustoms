@@ -106,16 +106,16 @@
                         </div>
                       <div class="col s6">
                             <b><br>Make:</b> <?php echo $product['itemMake']?>
-                            <b><br>Model:</b>
-                            <b><br>Year:</b>
-                            <b><br>Millage:</b>
-                            <b><br>Engine Size:</b>
-                            <b><br>WHP:</b>
+                            <b><br>Model:</b> <?php echo $product['itemModel']?>
+                            <b><br>Year:</b>  <?php echo $product['intemYear']?>
+                            <b><br>Millage:</b> <?php echo $product['itemMillage']?>
+                            <b><br>Engine Size:</b> <?php echo $product['engineSize']?>
+                            <b><br>WHP:</b> <?php echo $product['itemMake']?>
                       </div>
                       <div class="col s6">
-                            <b><br>Fuel Type:</b>
-                            <b><br>Transmission:</b>
-                            <b><br>Price:</b>
+                            <b><br>Fuel Type:</b> <?php echo $product['fuelType']?>
+                            <b><br>Transmission:</b> <?php echo $product['trans']?>
+                            <b><br>Price:</b> £<?php echo $product['itemPrice']?>
                       </div>
                     </div>
                   </div>
