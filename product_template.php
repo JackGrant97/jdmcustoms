@@ -69,7 +69,6 @@
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
-      
       <div class="slide">
       <div class="container">
             <div class="carousel carousel-slider center" data-indicators="true">
@@ -92,7 +91,7 @@
                   <div class="collapsible-body">
                     <div class="row">
                         <div class="title">
-                           <h3>Product Title</h3>
+                           <h3><?php echo $product['itemMake']?></h3>
                         </div>
                       <div class="col s6">
                             <b><br>Make:</b>
