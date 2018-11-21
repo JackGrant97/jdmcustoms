@@ -73,9 +73,8 @@
           <?php
           $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
           mysqli_error($con));
-          $_GET['itemID'];
-          $query = 'SELECT * FROM products WHERE itemID=?';
-          $result = mysqli_query($con, $query);
+          $result = $_GET['itemID'];
+
 
           if ($result):
             if(mysqli_num_rows($result) > 0):
