@@ -84,7 +84,7 @@
                while($product = mysqli_fetch_assoc($result)):
             ?>
                 <div class="col s4 col m4">
-                  <form method="post" action="product_template.php?actionid<?php echo $product['itemID'];?>">
+                  <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
      			             <div class="card-image waves-effect waves-block waves-light">
@@ -92,7 +92,7 @@
      			             </div>
                      	 <div class="card-content">
                      		 <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
-                     		 <p class="waves-effect waves-light btn"><a href="product_template.php">More Details</a></p>
+                     		 <p method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>" class="waves-effect waves-light btn"><a href="product_template.php">More Details</a></p>
                      	 </div>
                    		 <div class="card-reveal">
                      	   <span class="card-title grey-text text-darken-4"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">close</i></span>
