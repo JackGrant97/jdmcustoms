@@ -70,10 +70,6 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
         <div class="maincontent">
-          <?php
-          
-
-             ?>
           <div class="slide">
             <div class="container">
                 <div class="carousel carousel-slider center" data-indicators="true">
@@ -162,11 +158,6 @@
               </div>
             </ul>
         </div>
-        <?php
-      endwhile;
-    endif;
-  endif;
-  ?>
     </div>
       <script>
             $(document).ready(function(){
