@@ -70,6 +70,16 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
       <main>
         <div class="maincontent">
+          <?php
+            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
+            mysqli_error($con));
+            $query = 'SELECT * FROM products ORDER by itemID ASC';
+            $result = mysqli_query($con, $query);
+
+            if ($result):
+              if(mysqli_num_rows($result) > 0):
+                while($product = mysqli_fetch_assoc($result)):
+             ?>
           <div class="slide">
             <div class="container">
                 <div class="carousel carousel-slider center" data-indicators="true">
