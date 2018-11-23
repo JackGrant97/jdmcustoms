@@ -72,7 +72,7 @@
 	 <main>
     <div class="cars">
      <div class="row">
-       <div class="col s11 m4 l2">
+       <div class="col s11 m4 l2 push-s3">
          <div class="sidemenu">
 
          </div>
@@ -88,7 +88,7 @@
              if(mysqli_num_rows($result) > 0):
                while($product = mysqli_fetch_assoc($result)):
             ?>
-                <div class="col s3 col m3 push-s3">
+                <div class="col s3 col m3 pull-s11">
                   <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
