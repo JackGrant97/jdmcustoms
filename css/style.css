@@ -244,8 +244,11 @@ iframe
 
 .input-field
 {
-  background-color:black;
-  border-color: red;
-      color:red;
+  border-style: hidden;
+}
+
+.input-field:active
+{
+  background-color: black;
   border-style: hidden;
 }
