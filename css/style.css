@@ -236,8 +236,13 @@ iframe
   max-width: 100%;
 }
 
-.input-field:active
+.input-field
 {
-  color: red;
+
+}
+
+.search:active
+{
   background-color: red;
+  color: red;
 }
