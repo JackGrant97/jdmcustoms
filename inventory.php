@@ -69,6 +69,7 @@
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
+     <div class="container">
      <div class="row">
        <div class="col s12 m2 l2">
          <ul id="slide-out" class="side-nav fixed">
@@ -118,6 +119,7 @@
          endif;
          ?>
       </div>
+    </div>
 	  </main>
 
 
