@@ -231,17 +231,19 @@ iframe
 .searchbar
 {
   max-width: 100%;
-  border-style: hidden;
+
 }
 
-.searchinput
+.search
 {
-  padding-left: 50%;
-  border-style: hidden;
+  background-color:#f47443;
+    color:red;
+    border-style: hidden;
 }
 
 .input-field
 {
-
+  background-color:#f47443;
+      color:red;
   border-style: hidden;
 }
