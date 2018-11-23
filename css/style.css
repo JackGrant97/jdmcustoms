@@ -242,14 +242,14 @@ iframe
     text-decoration-color: white;
 }
 
-.input-field
-{
-  border-style: hidden;
-}
-
 .input-field:selected
 {
   background-color: black;
   border-style: hidden;
   border-color: blue;
+}
+
+.material-icons
+{
+  object-position: center;
 }
