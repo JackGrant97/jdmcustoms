@@ -198,7 +198,6 @@ iframe
   border-radius: 5px;
   padding: 16px;
   margin-bottom: 20px;
-  padding-top: 3%;
 }
 
 .btn:hover
@@ -221,4 +220,9 @@ iframe
 {
   background-color:black;
   height: 100%
+}
+
+.car
+{
+    padding-top: 3%;
 }

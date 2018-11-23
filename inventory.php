@@ -88,7 +88,7 @@
             ?>
 
                 <div class="col s3">
-                  <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
+                  <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
      			             <div class="card-image waves-effect waves-block waves-light">
