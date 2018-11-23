@@ -88,7 +88,6 @@
             ?>
 
                 <div class="col s3">
-                  <div class="cars">
                   <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
@@ -108,13 +107,12 @@
                   </div>
                 </form>
               </div>
-            </div>
+
            <?php
          endwhile;
        endif;
      endif;
      ?>
-
  </div>
 	  <!--Cards
 	  <div class="container">
