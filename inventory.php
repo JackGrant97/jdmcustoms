@@ -74,7 +74,7 @@
      <div class="row">
        <div class="col s11 m4 l2 push-s3">
          <div class="sidemenu">
-
+           <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
          </div>
        </div>
        <div class="container">
