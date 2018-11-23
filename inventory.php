@@ -82,6 +82,7 @@
         </div>
        </ul>
      </div>
+     <!--
      <div class="container">
      <div class="row">
        <div class="sidemenu">
@@ -96,7 +97,7 @@
             </form>
           </div>
          </ul>
-       </div>
+       </div> --!>
 
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
