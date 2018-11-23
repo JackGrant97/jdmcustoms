@@ -235,3 +235,9 @@ iframe
   padding-top: 20%;
   max-width: 100%;
 }
+
+.input-field:active
+{
+  color: red;
+  background-color: red;
+}
