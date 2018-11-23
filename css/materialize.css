@@ -6256,7 +6256,7 @@ input[type=search]:not(.browser-default):focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after, .select-wrapper.valid + label:after {
   content: attr(data-success);
-  color: red;
+  color: #fff;
   opacity: 1;
   -webkit-transform: translateY(9px);
           transform: translateY(9px);

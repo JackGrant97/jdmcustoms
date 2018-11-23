@@ -241,12 +241,9 @@ iframe
 
 }
 
-.search:active
+
+.sbar
 {
   background-color: red;
   color: red;
-}
-.sbar
-{
-  padding-left: 10%;
 }
