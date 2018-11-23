@@ -231,16 +231,17 @@ iframe
 .searchbar
 {
   max-width: 100%;
-  border-color: green;
+  border-style: hidden;
 }
 
 .searchinput
 {
   padding-left: 50%;
-  border-color: green;
+  border-style: hidden;
 }
 
 .input-field
 {
-  border-color: green;
+
+  border-style: hidden;
 }
