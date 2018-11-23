@@ -214,3 +214,8 @@ iframe
 {
   padding-top: 1%;
 }
+
+.collapsible-body
+{
+  background-color: grey;
+}
