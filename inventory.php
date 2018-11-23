@@ -73,12 +73,12 @@
     <div class="cars">
 
      <div class="row">
-      <div class="col s1">
+       <div class="col s12 m4 l3">
          <div class="sidemenu">
 
          </div>
        </div>
-       <div class="container">
+
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
            mysqli_error($con));
@@ -114,7 +114,7 @@
        endif;
      endif;
      ?>
-   </div>
+
  </div>
 </div>
 	  <!--Cards
