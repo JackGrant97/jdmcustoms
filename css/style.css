@@ -217,9 +217,10 @@ iframe
 
 }
 
-.side-nav fixed
+.sidemenu
 {
-  position: static;
+  position: absolute;
+  background-color: red;
 }
 
 .car
