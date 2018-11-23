@@ -69,6 +69,19 @@
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
+     <div class="sidemenu1">
+      <ul id="slide-out" class="side-nav fixed">
+        <div class="searchbar">
+          <form class="sbar">
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+       </ul>
+     </div>
      <div class="container">
      <div class="row">
        <div class="sidemenu">
