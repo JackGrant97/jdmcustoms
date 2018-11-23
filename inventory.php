@@ -71,7 +71,7 @@
 	 <main>
 
      <div class="container">
-       <form class="sbar">
+       <form class="searchbar">
          <div class="input-field">
            <input id="search" type="search" required>
            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
@@ -79,20 +79,6 @@
          </div>
        </form>
      <div class="row">
-      <!-- <div class="sidemenu">
-        <ul id="slide-out" class="side-nav fixed">
-          <div class="searchbar">
-            <form class="sbar">
-              <div class="input-field">
-                <input id="search" type="search" required>
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
-              </div>
-            </form>
-          </div>
-         </ul>
-       </div> !-->
-
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
            mysqli_error($con));

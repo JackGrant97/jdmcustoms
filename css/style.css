@@ -234,13 +234,13 @@ iframe
   max-width: 100%;
 }
 
-.input-field
+
+.searchbar
 {
 
 }
 
-
-.sbar
+.searchinput
 {
-
+  padding-left: 2%;
 }
