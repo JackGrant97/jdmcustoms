@@ -25,7 +25,7 @@
 <body ng-app="mainModule" ng-controller="mainController">
   <header>
   <!-- Navbar -->
-  <nav class="z-depth-0 grey darken-4">
+  <nav class="z-depth-0">
       <div class="nav-wrapper">
       <a href="#!" class="brand-logo"></a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
