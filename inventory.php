@@ -72,6 +72,7 @@
      <div class="container">
      <div class="row">
        <div class="sidemenu">
+         <div class="col s12 m12 l3">
          <form>
            <div class="input-field">
              <input id="search" type="search" required>
@@ -91,6 +92,7 @@
           </div>
         </ul> !-->
        </div>
+     </div>
 
 
          <?php
