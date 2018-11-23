@@ -28,7 +28,7 @@ main
 
 .nav-wrapper
 {
-	position: sticky;
+	position: fixed;
 	margin: 0%;
   color: rgba(255, 255, 255, 0.8);
 }
