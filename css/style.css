@@ -247,7 +247,7 @@ iframe
   border-style: hidden;
 }
 
-.input-field:active
+.input-field::selection
 {
   background-color: black;
   border-style: hidden;
