@@ -73,7 +73,7 @@
     <div class="cars">
 
      <div class="row">
-       <div class="col s12 m4 l3">
+       <div class="col s11 m4 l2">
          <div class="sidemenu">
 
          </div>
