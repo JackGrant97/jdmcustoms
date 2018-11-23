@@ -69,10 +69,10 @@
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
-     
+
      <div class="row">
        <div class="sidemenu">
-         <div class="col s12 m12 l3">
+         <div class="col s12 m2 l2">
          <form>
            <div class="input-field">
              <input id="search" type="search" required>
