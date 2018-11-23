@@ -89,7 +89,6 @@
              if(mysqli_num_rows($result) > 0):
                while($product = mysqli_fetch_assoc($result)):
             ?>
-            <div class="col s12 m8 l9">
                 <div class="col s3">
                   <form method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
@@ -110,7 +109,6 @@
                   </div>
                 </form>
               </div>
-            </div>
            <?php
          endwhile;
        endif;
