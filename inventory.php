@@ -71,7 +71,7 @@
 	 <main>
      <div class="container">
      <div class="row">
-    
+
          <ul id="slide-out" class="side-nav fixed">
           <form>
             <div class="input-field">
@@ -93,7 +93,7 @@
              if(mysqli_num_rows($result) > 0):
                while($product = mysqli_fetch_assoc($result)):
             ?>
-                <div class="col s12 m12 l3">
+                <div class="col s12 m12 l4">
                   <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
