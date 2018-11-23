@@ -71,8 +71,9 @@
 	 <main>
 
      <div class="row">
-       <div class="sidemenu">
+
          <div class="col s12 m2 l2">
+           <div class="sidemenu">
          <form>
            <div class="input-field">
              <input id="search" type="search" required>
