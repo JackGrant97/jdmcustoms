@@ -74,7 +74,7 @@
 
      <div class="row">
        <div class="sidemenu">
-         <div class="col s3">
+         <div class="col s2">
            <!-- Grey navigation panel -->
          </div>
        </div>
