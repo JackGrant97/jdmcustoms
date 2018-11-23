@@ -222,13 +222,12 @@ iframe
   height: 100%;
   background-color: red;
   color: red;
-  padding-right: 20%;
+  position: inherit;
 }
 
 .car
 {
     padding-top: 10%;
-    margin-left: 10%;
     object-position: right;
     float: right;
 
