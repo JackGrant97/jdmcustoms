@@ -238,6 +238,7 @@ iframe
 {
     background-color: black;
     border-style: hidden;
+    border-color: blue;
     text-decoration-color: white;
 }
 
@@ -250,4 +251,5 @@ iframe
 {
   background-color: black;
   border-style: hidden;
+  border-color: blue;
 }
