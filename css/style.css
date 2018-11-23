@@ -244,6 +244,6 @@ iframe
 
 .sbar:active
 {
-  background-color: red;
-  color: red;
+  background-color: grey;
+  color: grey;
 }
