@@ -240,6 +240,7 @@ iframe
     border-style: hidden;
     border-color: blue;
     text-decoration-color: white;
+      outline-color: blue;
 }
 
 .input-field:selected
@@ -247,6 +248,7 @@ iframe
   background-color: black;
   border-style: hidden;
   border-color: blue;
+  outline-color: blue;
 }
 
 .material-icons
