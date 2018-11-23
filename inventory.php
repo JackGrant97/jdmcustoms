@@ -71,7 +71,7 @@
 	 <main>
      <div class="container">
      <div class="row">
-
+       <div class="sidemenu">
          <ul id="slide-out" class="side-nav fixed">
           <div class="searchbar">
             <form>
@@ -83,6 +83,7 @@
             </form>
           </div>
          </ul>
+       </div>
 
 
          <?php

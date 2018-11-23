@@ -219,9 +219,7 @@ iframe
 
 .sidemenu
 {
-  background-color: white;
-  height: 100%;
-  color: white;
+position: relative;
 }
 
 .car
@@ -232,6 +230,6 @@ iframe
 
 .searchbar
 {
-  padding-top: 10%;
+  padding-top: 20%;
   max-width: 100%;
 }
