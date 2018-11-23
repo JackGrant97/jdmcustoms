@@ -70,15 +70,12 @@
 
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
-    <div class="cars">
      <div class="row">
       <div class="sidemenu">
           <div class="col s11 m3 l3">
-
-           <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
-         </div>
+             <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
+          </div>
        </div>
-
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
            mysqli_error($con));
@@ -116,7 +113,6 @@
      ?>
 
  </div>
-</div>
 	  <!--Cards
 	  <div class="container">
 	   <div class="content">
