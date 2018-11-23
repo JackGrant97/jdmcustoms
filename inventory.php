@@ -70,7 +70,7 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="row">
-      <div class="sidemenu">
+      <div class="sidenav">
           <div class="col s12 m2 l2">
              <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
           </div>
