@@ -222,7 +222,7 @@ iframe
   height: 100%;
   background-color: red;
   color: red;
-  position: inherit;
+  position: initial;
 }
 
 .car
