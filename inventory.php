@@ -74,14 +74,7 @@
 
          <div class="col s12 m2 l2">
  <div class="sidemenu">
-         <form>
-           <div class="input-field">
-             <input id="search" type="search" required>
-             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-             <i class="material-icons">close</i>
-           </div>
-         </form>
-        <!-- <ul id="slide-out" class="side-nav fixed">
+      <ul id="slide-out" class="side-nav fixed">
           <div class="searchbar">
             <form>
               <div class="input-field">
@@ -91,7 +84,7 @@
               </div>
             </form>
           </div>
-        </ul> !-->
+        </ul> 
        </div>
      </div>
 
