@@ -70,6 +70,7 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="row">
+       <div class="col s12 m2 l2">
        <ul id="slide-out" class="side-nav fixed">
          <li><div class="userView">
              <img class="background" src="http://placehold.it/350x150">
@@ -83,8 +84,8 @@
          <li><a class="subheader">Subheader</a></li>
          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
      </ul>
-          <!--<div class="col s12 m2 l2">
-             <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
+
+
           </div> -->
 
          <?php
