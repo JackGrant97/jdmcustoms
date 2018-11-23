@@ -19,13 +19,12 @@
   		.mySlides {display:none}
   		.demo {cursor:pointer}
   	</style>
-
     <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
     <header>
     <!-- Navbar -->
-		<nav class="z-depth-0">
+		<nav class="z-depth-0 grey darken-4">
   			<div class="nav-wrapper">
 				<a href="#!" class="brand-logo"></a>
                  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -42,7 +41,7 @@
               echo '<li><a href="includes/signup.inc.php">Register</a></li>';
             }
            ?>
-          
+
 				</ul>
 			</div>
 		</nav>
