@@ -238,28 +238,16 @@ iframe
 {
     background-color: black;
     border-style: hidden;
-
+    border-color: blue;
     text-decoration-color: white;
-      outline-color: blue;
+    
 }
-.search:active
-{
-    background-color: black;
-    border-style: hidden;
 
-    text-decoration-color: white;
-      outline-color: blue;
-}
-.input-field:active
-{
-  background-color: black;
-  border-style: hidden;
-  outline-color: blue;
-}
 .input-field:selected
 {
   background-color: black;
   border-style: hidden;
+  border-color: blue;
   outline-color: blue;
 }
 
