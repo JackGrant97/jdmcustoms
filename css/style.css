@@ -241,3 +241,10 @@ iframe
     border-style: hidden;
     text-decoration-color: white;
 }
+
+.input-field
+{
+  background-color:black;
+      color:red;
+  border-style: hidden;
+}
