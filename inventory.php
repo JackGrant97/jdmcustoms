@@ -70,7 +70,6 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="sidemenu1">
-      <ul id="slide-out" class="side-nav fixed">
         <div class="searchbar">
           <form class="sbar">
             <div class="input-field">
@@ -80,11 +79,9 @@
             </div>
           </form>
         </div>
-       </ul>
      </div>
-
      <div class="container">
-    <!-- <div class="row">
+     <!--<div class="row">
        <div class="sidemenu">
         <ul id="slide-out" class="side-nav fixed">
           <div class="searchbar">
@@ -97,7 +94,7 @@
             </form>
           </div>
          </ul>
-       </div> --!>
+       </div> !-->
 
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
