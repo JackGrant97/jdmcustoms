@@ -71,6 +71,9 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
     <div class="cars">
+      <div class="col s3">
+        <!-- Grey navigation panel -->
+      </div>
      <div class="row">
        <div class="container">
          <?php
