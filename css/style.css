@@ -242,7 +242,7 @@ iframe
 }
 
 
-.sbar
+.sbar:active
 {
   background-color: red;
   color: red;
