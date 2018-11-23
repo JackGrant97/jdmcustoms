@@ -236,9 +236,10 @@ iframe
 
 .search
 {
-  background-color:#f47443;
+  background-color: black;
     color:red;
     border-style: hidden;
+    text-decoration-color: white;
 }
 
 .input-field
