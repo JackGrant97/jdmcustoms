@@ -236,8 +236,7 @@ iframe
 
 .search
 {
-  background-color: black;
-    color:red;
+    background-color: black;
     border-style: hidden;
     text-decoration-color: white;
 }
@@ -247,7 +246,7 @@ iframe
   border-style: hidden;
 }
 
-.input-field::selection
+.input-field:selected
 {
   background-color: black;
   border-style: hidden;
