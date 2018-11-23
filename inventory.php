@@ -73,9 +73,9 @@
     <div class="cars">
 
      <div class="row">
-       <div class="sidemenu">
-         <div class="col s2">
-           <!-- Grey navigation panel -->
+      <div class="col s2">
+         <div class="sidemenu">
+
          </div>
        </div>
        <div class="container">
