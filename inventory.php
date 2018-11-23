@@ -71,10 +71,13 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
     <div class="cars">
-      <div class="col s3">
-        <!-- Grey navigation panel -->
-      </div>
+
      <div class="row">
+       <div class="sidemenu">
+         <div class="col s3">
+           <!-- Grey navigation panel -->
+         </div>
+       </div>
        <div class="container">
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
