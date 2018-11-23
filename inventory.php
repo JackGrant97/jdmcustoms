@@ -71,22 +71,16 @@
 	 <main>
      <div class="row">
        <div class="col s12 m2 l2">
-       <ul id="slide-out" class="side-nav fixed">
-         <li><div class="userView">
-             <img class="background" src="http://placehold.it/350x150">
-             <a href="#!user"><img class="circle" src="http://placehold.it/350x300"></a>
-             <a href="#!name"><span class="white-text name">John Doe</span></a>
-             <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-         </div></li>
-         <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-         <li><a href="#!">Second Link</a></li>
-         <li><div class="divider"></div></li>
-         <li><a class="subheader">Subheader</a></li>
-         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-     </ul>
-
-
-          </div> -->
+         <ul id="slide-out" class="side-nav fixed">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+         </ul>
+        </div> -->
 
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
