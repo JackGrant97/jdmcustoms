@@ -71,7 +71,7 @@
 	 <main>
      <div class="container">
      <div class="row">
-       <div class="col s12 m2 l2">
+    
          <ul id="slide-out" class="side-nav fixed">
           <form>
             <div class="input-field">
@@ -81,7 +81,7 @@
             </div>
           </form>
          </ul>
-        </div>
+
 
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
@@ -93,7 +93,7 @@
              if(mysqli_num_rows($result) > 0):
                while($product = mysqli_fetch_assoc($result)):
             ?>
-                <div class="col s12 m12 l4">
+                <div class="col s12 m12 l3">
                   <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
      			            <div class="card reveal-panel">
