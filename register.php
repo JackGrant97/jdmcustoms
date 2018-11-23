@@ -25,7 +25,7 @@
 <body ng-app="mainModule" ng-controller="mainController">
   <header>
   <!-- Navbar -->
-  <nav class="z-depth-0">
+  <nav class="z-depth-0 grey darken-4">
       <div class="nav-wrapper">
       <a href="#!" class="brand-logo"></a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -146,7 +146,7 @@
                         echo '<li><a href="includes/signup.inc.php">Register</a></li>';
                       }
                      ?>
-                    
+
                 </div>
                 <div class="col l4 offset-l2 s12">
                   <h5 class="white-text">Links</h5>
