@@ -233,4 +233,5 @@ iframe
 .searchbar
 {
   padding-top: 10%;
+  max-width: 50%;
 }
