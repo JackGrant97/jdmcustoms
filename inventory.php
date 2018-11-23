@@ -69,8 +69,6 @@
     </header>
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
-     <div class="sidemenu1">
-        <div class="searchbar">
           <form class="sbar">
             <div class="input-field">
               <input id="search" type="search" required>
@@ -78,8 +76,6 @@
               <i class="material-icons">close</i>
             </div>
           </form>
-        </div>
-     </div>
      <div class="container">
      <!--<div class="row">
        <div class="sidemenu">
