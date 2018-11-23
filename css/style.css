@@ -219,7 +219,7 @@ iframe
 
 .sidemenu
 {
-position: absolute;
+  position:static;
 }
 
 .car
