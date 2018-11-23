@@ -233,6 +233,12 @@ iframe
   max-width: 100%;
 }
 
+.searchbar:enabled
+{
+  background-color: red;
+  color: red;
+}
+
 .searchinput
 {
   padding-left: 50%;
