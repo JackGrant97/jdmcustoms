@@ -72,7 +72,7 @@
 	 <main>
     <div class="cars">
      <div class="row">
-       <div class="col s3 m4 l2 push-s4">
+       <div class="col s3 push-s4">
          <div class="sidemenu">
            <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
          </div>
