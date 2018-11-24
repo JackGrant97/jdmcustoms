@@ -70,7 +70,7 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="container">
-       <form class="searchbar" method="post">
+       <form action="includes/search.php"class="searchbar" method="post">
          <div class="input-field">
            <input id="search" type="search" required>
            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
@@ -89,22 +89,7 @@
              if(mysqli_num_rows($result) > 0):
                while($product = mysqli_fetch_assoc($result)):
             ?>
-            <?php
-            if (isset($_POST['searchbar'])) {
-                $search = mysqli_real_escape_string($con, $_POST['Search']);
-                $sql = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' trans LIKE '%$search%' fuelType LIKE '%$search%'";
-                $result = mysqli_query($con, $sql);
-                $queryResult = mysqli_num_rows($result);
 
-                if ($queryResult > 0 ) {
-                  while ($row = mysqli_fetch_assoc($result)) {
-
-                  }
-                } else {
-                  echo "There Are No Results Matching Your Search";
-                }
-            }
-             ?>
                 <div class="col s12 m12 l4">
                   <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
