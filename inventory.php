@@ -90,7 +90,7 @@
                while($product = mysqli_fetch_assoc($result)):
             ?>
             <?php
-            if (isset($_POST['search'])) {
+            if (isset($_POST['searchbar'])) {
                 $search = mysqli_real_escape_string($con, $_POST['Search']);
                 $sql = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' trans LIKE '%$search%' fuelType LIKE '%$search%'";
                 $result = mysqli_query($con, $sql);
