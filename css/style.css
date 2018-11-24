@@ -240,7 +240,7 @@ iframe
     border-style: hidden;
     border-color: blue;
     text-decoration-color: white;
-    
+
 }
 
 .input-field:selected
@@ -254,4 +254,9 @@ iframe
 .material-icons
 {
   object-position: center;
+}
+
+.close
+{
+  padding-top: 2%;
 }

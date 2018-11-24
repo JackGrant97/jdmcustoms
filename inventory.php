@@ -75,7 +75,9 @@
          <div class="input-field">
            <input id="search" type="search" required>
            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+           <div class="close">
            <i class="material-icons">close</i>
+         </div>
          </div>
        </form>
      <div class="row">
