@@ -72,15 +72,15 @@
   <main>
     <div class="login">
       <div class="row">
-        <form class="col s12" action="includes/login.inc.php" method="post">
+        <form class="col s12 m12 l4" action="includes/login.inc.php" method="post">
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 m12 l4">
               <input id="email" name="email" type="email" class="validate">
               <label for="email">E-mail</label>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 m12 l4">
               <input id="password" name="password" type="password" class="validate">
               <label for="password">Password</label>
             </div>
