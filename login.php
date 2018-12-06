@@ -73,7 +73,7 @@
    <div class="container">
     <div class="login">
       <div class="row">
-        <form class="col s12 m16 l16" action="includes/login.inc.php" method="post">
+        <form class="col s12 m6 l6" action="includes/login.inc.php" method="post">
           <div class="row">
             <div class="input-field col s12 m12 l12">
               <input id="email" name="email" type="email" class="validate">
