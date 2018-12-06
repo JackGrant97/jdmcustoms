@@ -27,7 +27,7 @@
 		<nav class="z-depth-0 grey darken-4">
   			<div class="nav-wrapper">
 				<a href="#!" class="brand-logo"></a>
-                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 				  <li><a href="index.php">Home</a></li>
 					<li><a href="inventory.php">Inventory</a></li>

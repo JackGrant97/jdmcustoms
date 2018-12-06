@@ -98,7 +98,7 @@
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
-          echo $firstname['FirstName']'<p><b>You are Logged In!</b></p>';
+          echo '<p><b>You are Logged In!</b></p>';
 
         }
         else {
