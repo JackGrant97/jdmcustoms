@@ -94,9 +94,7 @@
 
              if ($queryResult > 0) :
                while ($row = mysqli_fetch_assoc($result)) :
-                 echo "";
-
-
+                
             ?>
                 <div class="col s12 m12 l4">
                   <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
