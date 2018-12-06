@@ -90,11 +90,10 @@
              $search = mysqli_real_escape_string($con, $_POST['search']);
              $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%'";
              $result = mysqli_query($con, $query);
-             $queryResult = mysqli_num_rows($result);
 
-             if ($queryResult > 0):
-               while ($row = mysqli_fetch_assoc($result)):
-
+             if ($result):
+               if(mysqli_num_rows($result) > 0):
+                 while($product = mysqli_fetch_assoc($result)):
             ?>
                 <div class="col s12 m12 l4">
                   <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
@@ -118,11 +117,12 @@
               </div>
                <?php
              endwhile;
-           endif;
-           else {
-             echo "There are no results matching your search!";
-           }
+           endif;   
          endif;
+         else {
+           echo "There are no results matching your search!";
+         }
+       endif;
          ?>
       </div>
     </div>
