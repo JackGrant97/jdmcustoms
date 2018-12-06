@@ -77,7 +77,7 @@
            <i class="material-icons">close</i>
          </div>
        </form> !-->
-       <form action="search.php" method="post">
+       <form action="search.php" method="POST">
          <input type="text" name="search" placeholder="Search">
          <button type="submit" class="btn waves-effect" name="sumbit-search">Search</button>
       </form>
