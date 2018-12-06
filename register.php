@@ -71,6 +71,7 @@
   </header>
 <body background="assets/rearlight.jpg" width="100%" height="100%">
   <main>
+   <div class="container">
     <div class="register">
       <div class="row">
         <form class="col s12 m12 l12" action="includes/signup.inc.php" method="post">
@@ -125,6 +126,7 @@
         </form>
       </div>
     </div>
+  </div>
   </main>
 
   <!--Footer-->

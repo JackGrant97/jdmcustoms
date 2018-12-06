@@ -70,6 +70,7 @@
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
   <main>
+   <div class="container">
     <div class="login">
       <div class="row">
         <form class="col s12 m12 l12" action="includes/login.inc.php" method="post">
@@ -93,10 +94,11 @@
         </form>
       </div>
     </div>
+  </div>
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
-          echo '<p><b>You are Logged In!</b></p>';
+          echo '<p><b>Welcome! <?php echo $firstname['FirstName']?>, you are Logged In!</b></p>';
 
         }
         else {
