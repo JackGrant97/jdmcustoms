@@ -78,7 +78,7 @@
           </div>
         </form> !-->
         <form action="search.php" method="post">
-          <input type="text"  name="search" placeholder="Search">
+          <input type="text" name="search" placeholder="Search">
           <button type="submit" class="btn waves-effect" name="sumbit-search">Search</button>
         </form>
              <div class="row">
@@ -86,6 +86,7 @@
                    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
                    mysqli_error($con));
                    if (isset($_POST['submit-search'])):
+                   $search = mysqli_real_escape_string($con, $_POST['search']);
                    $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%'";
                    $result = mysqli_query($con, $query);
 
