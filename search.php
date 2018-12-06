@@ -86,13 +86,13 @@
                    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
                    mysqli_error($con));
                    if (isset($_POST['submit-search'])):
-                   $search = mysqli_real_escape_string($con, $_POST['search']);
-                   $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%'";
-                   $result = mysqli_query($con, $query);
+                     $search = mysqli_real_escape_string($con, $_POST['search']);
+                     $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%'";
+                     $result = mysqli_query($con, $query);
 
-                   if ($result):
-                     if(mysqli_num_rows($result) > 0):
-                       while($product = mysqli_fetch_assoc($result)):
+                     if ($result):
+                       if(mysqli_num_rows($result) > 0):
+                         while($product = mysqli_fetch_assoc($result)):
                     ?>
 
                         <div class="col s12 m12 l4">
