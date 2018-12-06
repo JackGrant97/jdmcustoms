@@ -92,14 +92,11 @@
              $result = mysqli_query($con, $query);
              $queryResult = mysqli_num_rows($result);
 
-             if ($queryResult > 0) {
-               while ($row = mysqli_fetch_assoc($result)) {
+             if ($queryResult > 0) :
+               while ($row = mysqli_fetch_assoc($result)) :
                  echo "";
-               }
-             } else {
-               echo "There are no results matching your search!";
-             }
-           }
+
+
             ?>
                 <div class="col s12 m12 l4">
                   <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
@@ -121,6 +118,14 @@
                   </div>
                 </form>
               </div>
+               <?php
+             endwhile;
+           endif;
+           else {
+             echo "There are no results matching your search!";
+           }
+         }
+         ?>
       </div>
     </div>
 	  </main>
