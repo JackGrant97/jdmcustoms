@@ -70,18 +70,10 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="container">
-      <!-- <form action="search.php" method="POST">
-         <div class="input-field">
-           <input id="search" type="search" name="searchbar"required>
-           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-           <i class="material-icons">close</i>
-         </div>
-       </form> !-->
        <form action="search.php" method="POST">
          <input type="text" name="search" placeholder="Search">
          <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
       </form>
-
      <div class="row">
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
@@ -93,7 +85,6 @@
              if(mysqli_num_rows($result) > 0):
                while($product = mysqli_fetch_assoc($result)):
             ?>
-
                 <div class="col s12 m12 l4">
                   <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
                     <div class="products">
