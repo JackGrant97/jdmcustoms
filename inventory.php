@@ -70,13 +70,17 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="container">
-       <form action="search.php" method="POST">
+      <!-- <form action="search.php" method="POST">
          <div class="input-field">
            <input id="search" type="search" name="searchbar"required>
            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
            <i class="material-icons">close</i>
          </div>
-       </form>
+       </form> !-->
+       <form action="search.php" method="post">
+         <input type="text"  name="search" placeholder="Search">
+         <button type="submit" name="sumbit-search">Search</button>
+      </form>
 
      <div class="row">
          <?php
