@@ -78,7 +78,7 @@
          </div>
        </form> !-->
        <form action="search.php" method="post">
-         <input type="text"  name="search" placeholder="Search">
+         <input type="text" name="search" placeholder="Search">
          <button type="submit" class="btn waves-effect" name="sumbit-search">Search</button>
       </form>
 
