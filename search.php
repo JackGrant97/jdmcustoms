@@ -70,57 +70,59 @@
   <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="container">
-       <form action="search.php"method="POST">
-         <div class="input-field">
-           <input id="search" type="search" name="searchbar"required>
-           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-           <i class="material-icons">close</i>
-         </div>
-       </form>
+       <!-- <form action="search.php" method="POST">
+          <div class="input-field">
+            <input id="search" type="search" name="searchbar"required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form> !-->
+        <form action="search.php" method="post">
+          <input type="text"  name="search" placeholder="Search">
+          <button type="submit" class="btn waves-effect" name="sumbit-search">Search</button>
+        </form>
 
      <div class="row">
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
            mysqli_error($con));
-           if (isset($_POST['searchbar'])) {
-             $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' trans LIKE '%$search%' fuelType LIKE '%$search%'";
-             $result = mysqli_query($con, $sql);
+           if (isset($_POST['submit-search'])) {
+             $search = mysqli_real_escape_string($con, $_POST['search']);
+             $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%'";
+             $result = mysqli_query($con, $query);
              $queryResult = mysqli_num_rows($result);
 
-             if ($queryResult > 0 ) {
+             if ($queryResult > 0) {
                while ($row = mysqli_fetch_assoc($result)) {
-
+                 echo "  <div class="col s12 m12 l4">
+                     <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
+                       <div class="products">
+        			            <div class="card reveal-panel">
+        			             <div class="card-image waves-effect waves-block waves-light">
+        				            <img class="activator" src="<?php echo $product['image1']?>">
+        			             </div>
+                        	 <div class="card-content">
+                        		 <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
+                        		 <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
+                        	 </div>
+                      		 <div class="card-reveal">
+                        	   <span class="card-title grey-text text-darken-4"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">close</i></span>
+                        		 <p>A CPU also known as a Central Processing Unit, or processor is referred to as the brain of a computer system. A CPU completes most calculations. Without a CPU a computer system will be unable to operate as a CPU allocates tasks to each component of the system, this includes hard disks, RAM, GPU's etc.
+                        		</p>
+                      		</div>
+                       </div>
+                     </div>
+                   </form>
+                 </div>";
                }
              } else {
-               echo "There Are No Results Matching Your Search";
+               echo "There are no results matching your search!";
              }
            }
             ?>
-                <div class="col s12 m12 l4">
-                  <form class="car" method="post" action="inventory.php?actionid<?php echo $product['itemID'];?>">
-                    <div class="products">
-     			            <div class="card reveal-panel">
-     			             <div class="card-image waves-effect waves-block waves-light">
-     				            <img class="activator" src="<?php echo $product['image1']?>">
-     			             </div>
-                     	 <div class="card-content">
-                     		 <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
-                     		 <p class="waves-effect waves-light btn"><a href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a></p>
-                     	 </div>
-                   		 <div class="card-reveal">
-                     	   <span class="card-title grey-text text-darken-4"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">close</i></span>
-                     		 <p>A CPU also known as a Central Processing Unit, or processor is referred to as the brain of a computer system. A CPU completes most calculations. Without a CPU a computer system will be unable to operate as a CPU allocates tasks to each component of the system, this includes hard disks, RAM, GPU's etc.
-                     		</p>
-                   		</div>
-                    </div>
-                  </div>
-                </form>
-              </div>
+
                <?php
-             endwhile;
-           endif;
-         endif;
-         ?>
+
       </div>
     </div>
 	  </main>
