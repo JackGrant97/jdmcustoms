@@ -66,7 +66,7 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-  <body background="assets/carBG5.jpeg" width="100%" height="100%">
+  <body background="assets/CarBG5.jpeg" width="100%" height="100%">
    	<main>
         <div class="container">
             <div class="logo">
