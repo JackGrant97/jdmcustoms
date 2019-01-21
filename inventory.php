@@ -67,7 +67,7 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-  <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
+  <body background="assets/CarBG2.jpg" width="100%" height="100%" text="white">
 	 <main>
      <div class="container">
        <form action="search.php" method="POST">
