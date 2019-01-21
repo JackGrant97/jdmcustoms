@@ -172,8 +172,7 @@ iframe
 
 .logo
 {
-  vertical-align: middle;
-  object-position: middle;
+  position: initial;
   text-align: center;
 }
 .status
