@@ -172,7 +172,8 @@ iframe
 
 .logo
 {
-  left: 30%;
+  margin-right: auto;
+  margin-left: auto;
 	margin-top: 15%;
 	position: absolute;
 	object-position: center;
