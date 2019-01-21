@@ -174,10 +174,10 @@ iframe
 {
   margin-right: auto;
   margin-left: auto;
-  vertical-align: center;
-  object-position: center;
+	margin-top: 15%;
 	position: absolute;
 	object-position: center;
+  text-align: center;
 }
 .status
 {
