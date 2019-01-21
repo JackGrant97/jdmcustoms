@@ -125,7 +125,7 @@
                   <div class="collapsible-body">
                     <div class="row">
                       <div class="col s6">
-                      <b><br>Statement</b> <?php echo $product['OwnerDesc']?>
+                      <b>Statement:</b><br> <?php echo $product['OwnerDesc']?>
                       </div>
                         <!--<div class="title">
                             <h3>Product Review</h3>
