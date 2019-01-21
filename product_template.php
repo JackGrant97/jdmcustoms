@@ -117,7 +117,6 @@
                             <b><br>Transmission:</b> <?php echo $product['trans']?>
                             <b><br>WHP:</b> <?php echo $product['whp']?> WHP
                             <b><br>Price:</b> £<?php echo $product['itemPrice']?>
-
                     </div>
                   </div>
                 </li>
@@ -126,7 +125,7 @@
                   <div class="collapsible-body">
                     <div class="row">
                       <div class="col s6">
-                        <?php echo $product['OwnerDesc']?>
+                      <b><br>Statement</b> <?php echo $product['OwnerDesc']?>
                       </div>
                         <!--<div class="title">
                             <h3>Product Review</h3>
