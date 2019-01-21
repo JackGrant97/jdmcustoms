@@ -174,8 +174,8 @@ iframe
 {
   margin-right: auto;
   margin-left: auto;
-  vertical-align: middle;
-  object-position: middle;
+  vertical-align: center;
+  object-position: center;
 	position: absolute;
 	object-position: center;
 }
