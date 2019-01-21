@@ -108,6 +108,7 @@
                             <b><br>Make:</b> <?php echo $product['itemMake']?>
                             <b><br>Model:</b> <?php echo $product['itemModel']?>
                             <b><br>Year:</b>  <?php echo $product['itemYear']?>
+                            <b><br>Colour</b>  <?php echo $product['itemColour']?>
                             <b><br>Millage:</b> <?php echo $product['itemMillage']?>
                             <b><br>Engine Size:</b> <?php echo $product['engineSize']?>
                             <b><br>WHP:</b> <?php echo $product['whp']?> WHP
