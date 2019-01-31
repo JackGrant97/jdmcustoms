@@ -179,6 +179,7 @@ iframe
 
 .bgvideo
 {
+  position: relative;
   z-index: 0;
 }
 .status
