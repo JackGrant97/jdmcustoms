@@ -73,10 +73,10 @@
           <source src="assets/videos/jdmcar.mp4">
         </video>`
       </div>
-            <div class="logo">
-                <img src="assets/jdmcustoms.png" width="50%" height="50%">
-            </div>
-      </main>
+      <div class="logo">
+         <img src="assets/jdmcustoms.png" width="50%" height="50%">
+      </div>
+    </main>
 
       <!--Footer-->
         <div class="footer">
