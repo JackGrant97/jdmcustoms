@@ -179,7 +179,7 @@ iframe
   vertical-align: middle;
   display: inline-block;
   text-align: center;
-
+ align-self: center;
   z-index: 1;
 }
 
