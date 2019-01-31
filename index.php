@@ -68,11 +68,11 @@
     </header>
   <body>
    	<main>
-      <!--  <div class="container">
+        <div class="container">
             <div class="logo">
                 <img src="assets/jdmcustoms.png" width="50%" height="50%">
             </div>
-        </div> -->
+        </div>
         <video autoplay loop width="100%" height="100%">
           <source src="assets/videos/jdmcar.mp4">
         </video>
