@@ -172,6 +172,9 @@ iframe
 
 .logo
 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   text-align: center;
   z-index: 1;
 }
