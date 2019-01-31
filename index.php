@@ -66,17 +66,14 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-  <body>
+  <body background="assets/carBG.jpg" width="100%" height="100%">
    	<main>
-      <div class="bgvideo">
-        <video autoplay loop width="100%" height="100%">
-          <source src="assets/videos/jdmcar.mp4">
-        </video>`
-      </div>
-      <div class="logo">
-         <img src="assets/jdmcustoms.png" width="50%" height="50%">
-      </div>
-    </main>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/jdmcustoms.png" width="50%" height="50%">
+            </div>
+        </div>
+      </main>
 
       <!--Footer-->
         <div class="footer">

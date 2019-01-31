@@ -172,16 +172,11 @@ iframe
 
 .logo
 {
-
+  position: absolute;
   text-align: center;
   z-index: 1;
 }
 
-.bgvideo
-{
-
-  z-index: 0;
-}
 .status
 {
   background-color: white;
