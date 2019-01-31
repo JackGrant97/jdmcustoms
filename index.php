@@ -99,7 +99,7 @@
                          ?>
 
                     </div>
-                    <div class="col l6 offset-l6 s12">
+                    <div class="col l4 offset-l2 s12">
                       <h5 class="white-text">Links</h5>
                       <ul>
                         <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
