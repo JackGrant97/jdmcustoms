@@ -73,9 +73,11 @@
                 <img src="assets/jdmcustoms.png" width="50%" height="50%">
             </div>
         </div>
-        <video autoplay loop width="100%" height="100%">
-          <source src="assets/videos/jdmcar.mp4">
-        </video>
+        <div class="bgvideo">
+          <video autoplay loop width="100%" height="100%">
+            <source src="assets/videos/jdmcar.mp4">
+          </video>`
+        </div>
       </main>
 
       <!--Footer-->
