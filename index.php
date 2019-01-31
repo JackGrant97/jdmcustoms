@@ -66,7 +66,7 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-  <body background="assets/CarBG2.jpg" width="100%" height="100%">
+  <body background="assets/videos/jdmcar.mp4" width="100%" height="100%">
    	<main>
         <div class="container">
             <div class="logo">
