@@ -66,7 +66,10 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-  <body background="assets/videos/jdmcar.mp4" width="100%" height="100%">
+  <body  width="100%" height="100%">
+    <video controls loop>
+      <source src="assets/videos/jdmcar.mp4">
+    </video>
    	<main>
         <div class="container">
             <div class="logo">
