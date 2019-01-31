@@ -21,10 +21,7 @@ body
 	object-position: center;
 }
 
-main
-{
-	 flex: 1 0 auto;
-}
+
 
 .nav-wrapper
 {
@@ -174,8 +171,6 @@ iframe
 {
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
   vertical-align: middle;
   display: block;
   text-align: center;

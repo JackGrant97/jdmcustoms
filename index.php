@@ -68,10 +68,10 @@
     </header>
   <body background="assets/speedo.jpg" width="100%" height="100%">
    	<main>
-            <div class="logo" align="middle">
-                <img src="assets/jdmcustoms.png" width="50%" height="50%">
-            </div>
-      </main>
+      <div class="logo" align="middle">
+        <img src="assets/jdmcustoms.png" width="50%" height="50%">
+      </div>
+    </main>
 
       <!--Footer-->
         <div class="footer">
