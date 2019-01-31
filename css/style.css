@@ -22,7 +22,6 @@ body
 }
 
 
-
 .nav-wrapper
 {
 	position: fixed;
@@ -32,6 +31,8 @@ body
 
 .footer
 {
+  margin-top: auto;
+  object-position: bottom;
 
 	width:100%;
   height: 1%;
