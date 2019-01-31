@@ -172,14 +172,13 @@ iframe
 
 .logo
 {
-  position: absolute;
   text-align: center;
   z-index: 1;
 }
 
 .bgvideo
 {
-  position: relative;
+  position: absolute;
   z-index: 0;
 }
 .status
