@@ -175,8 +175,9 @@ iframe
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
-  display: inline-block;
+  display: flex;
   text-align: center;
+
   z-index: 1;
 }
 
