@@ -170,8 +170,9 @@ iframe
 .logo
 {
   margin: auto;
-  padding: 10%, 0;
+  padding: 10%;
   vertical-align: middle;
+  display: block;
   text-align: center;
   z-index: 1;
   float: middle;
