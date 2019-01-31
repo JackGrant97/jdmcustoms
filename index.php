@@ -83,7 +83,7 @@
           <footer class="page-footer grey darken-4">
                 <div class="container">
                   <div class="row">
-                    <div class="col l6 m6 s12">
+                    <div class="col l6 s12">
                       <h5 class="white-text">Footer Content</h5>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="inventory.php">Inventory</a></li>
