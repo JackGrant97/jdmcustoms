@@ -68,11 +68,9 @@
     </header>
   <body background="assets/speedo.jpg" width="100%" height="100%">
    	<main>
-        <div class="container">
             <div class="logo" align="middle">
                 <img src="assets/jdmcustoms.png" width="50%" height="50%">
             </div>
-        </div>
       </main>
 
       <!--Footer-->
