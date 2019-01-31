@@ -176,6 +176,7 @@ iframe
   margin-right: auto;
   vertical-align: middle;
   display: table-cell;
+  text-align: center;
   z-index: 1;
 }
 
