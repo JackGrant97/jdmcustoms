@@ -71,7 +71,7 @@
 
 	 <main>
      <?php
-     if (isset($_SESSION['userid'])):
+     if (isset($_SESSION >=1['userid'])):
      ?>
   <div class="container">
       <form action="search.php" method="POST">
@@ -119,7 +119,7 @@
     </div>
     <?php
     endif;
-    else :
+    if (isset($_SESSION <1['userid'])):
     ?>
     <?php
     endif;
