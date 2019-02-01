@@ -15,7 +15,7 @@ if (isset($_POST['signup-submit'])) {
 
   if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($dateofbirth)) {
     header("Location: ../register.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
-    "&City=".$city."&address=".$address."&email=".$email "&Dob=".$dateofbirth);
+    "&City=".$city."&address=".$address."&email=".$email);
     exit();
   }
   else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$firstname) && !preg_match("/^[a-zA-Z]*$/",$lastname) && !preg_match("/^[a-zA-Z]*$/",$city)) {
@@ -39,6 +39,10 @@ if (isset($_POST['signup-submit'])) {
   }
   else if (!preg_match("/^[a-zA-Z]*$/",$city)) {
     header("Location: ../register.php?error=invalidCity&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode."&address=".$address);
+    exit();
+  }
+  else if (!preg_match("/^[a-zA-Z]*$/",$dateofbirth)) {
+    header("Location: ../register.php?error=invalidDateofBirth&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode."&address=".$address);
     exit();
   }
   else if ($password !== $passwordRepeat) {
