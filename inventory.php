@@ -68,6 +68,9 @@
             <script>$(".button-collapse").sideNav();</script>
     </header>
   <body background="assets/CarBG7.jpg" width="100%" height="100%" text="white">
+    <?php
+    if (isset($_SESSION['userid'])):
+    ?>
 	 <main>
      <div class="container">
        <form action="search.php" method="POST">
@@ -114,6 +117,14 @@
       </div>
     </div>
 	  </main>
+    <?php
+  endif;
+  else :
+     ?>
+     TEST
+     <?php
+   endif;
+      ?>
 
 
         <!--Footer-->
