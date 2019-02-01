@@ -122,7 +122,9 @@
     ?>
     <div class="container">
       <div class="notifylogin">
-        <p>Please Log In or Register an Account To View our Inventory! </p>
+        <div class="notifytext">
+          <p>Please Log In or Register an Account To View our Inventory! </p>
+        </div>
       </div>
     </div>
     <?php endif;?>

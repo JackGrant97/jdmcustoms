@@ -280,3 +280,8 @@ main
   border-radius: 5%;
   position: initial;4
 }
+
+.notifytext
+{
+  text-align: center;
+}
