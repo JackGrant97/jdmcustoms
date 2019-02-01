@@ -117,7 +117,7 @@
       </div>
     </div>
      <?php
-       endwhile
+   endwhile;
        else :
       ?>
       <p> TEST </p>
