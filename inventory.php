@@ -54,7 +54,7 @@
             <li><a href="about.php">About</a></li>
             <li><div class="divider"></div></li>
             <?php
-              if (isset($_SESSION['userid'])) {
+               {
                 echo '<li><a href="includes/logout.inc.php">logout</a></li>';
               }
               else {
@@ -69,7 +69,9 @@
     </header>
   <body background="assets/CarBG7.jpg" width="100%" height="100%" text="white">
 	 <main>
-     <?php if (isset($_SESSION['userid'])): ?>
+     <?php
+     if (isset($_SESSION['userid'])): 
+     ?>
        <div class="container">
          <form action="search.php" method="POST">
            <input type="text" name="search" placeholder="Search">
