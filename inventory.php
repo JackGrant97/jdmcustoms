@@ -71,7 +71,7 @@
 
 	 <main>
      <?php
-     if (isset($_SESSION [>=1'userid'])):
+     if (isset($_SESSION ['userid']>=1)):
      ?>
   <div class="container">
       <form action="search.php" method="POST">
@@ -121,7 +121,7 @@
     endif;
     ?>
     <?php
-    if (isset($_SESSION [<1'userid'])):
+    if (isset($_SESSION ['userid']<1)):
     ?>
     <?php
     endif;
