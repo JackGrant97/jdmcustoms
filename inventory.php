@@ -119,6 +119,8 @@
     </div>
     <?php
     endif;
+    ?>
+    <?php
     if (isset($_SESSION <1['userid'])):
     ?>
     <?php
