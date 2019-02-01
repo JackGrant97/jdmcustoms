@@ -123,7 +123,11 @@
     <?php
     if (isset($_SESSION ['userid']) < 1):
     ?>
-    <p>Please Log In or Register an Account To View our Inventory! </p>
+    <div class="container">
+      <div class="notifylogin">
+        <p>Please Log In or Register an Account To View our Inventory! </p>
+      </div>
+    </div>
     <?php
     endif;
      ?>
