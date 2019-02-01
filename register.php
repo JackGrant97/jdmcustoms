@@ -109,7 +109,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12">
-              <input id="date" name="date" type="text" class="validate">
+              <input id="Dob" name="Dob" type="text" class="validate">
               <label for="date">Date of Birth (DD/MM/YYYY)</label>
             </div>
           </div>
