@@ -11,11 +11,11 @@ if (isset($_POST['signup-submit'])) {
   $email = $_POST['email'];
   $password = $_POST['password'];
   $passwordRepeat = $_POST['password-repeat'];
-  $dateofbirth = $_POST['Dob'];
+  $Dob = $_POST['Dob'];
 
-  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($dateofbirth)) {
+  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob)) {
     header("Location: ../register.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
-    "&City=".$city."&address=".$address."&email=".$email);
+    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob);
     exit();
   }
   else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$firstname) && !preg_match("/^[a-zA-Z]*$/",$lastname) && !preg_match("/^[a-zA-Z]*$/",$city)) {
@@ -41,8 +41,8 @@ if (isset($_POST['signup-submit'])) {
     header("Location: ../register.php?error=invalidCity&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode."&address=".$address);
     exit();
   }
-  else if (!preg_match("/^[a-zA-Z]*$/",$dateofbirth)) {
-    header("Location: ../register.php?error=invalidDateofBirth&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode."&address=".$address);
+  else if (!preg_match("/^[a-zA-Z]*$/",$Dob)) {
+    header("Location: ../register.php?error=invalidDob&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode."&address=".$address);
     exit();
   }
   else if ($password !== $passwordRepeat) {
@@ -79,7 +79,7 @@ if (isset($_POST['signup-submit'])) {
           //Uses BCrypt to hash users password
           $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
 
-          mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $email, $hashedpassword, $postcode, $address, $city, $dateofbirth);
+          mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $email, $hashedpassword, $postcode, $address, $city, $Dob);
           mysqli_stmt_execute($stmt);
           header("Location: ../register.php?signup=success");
           exit();
