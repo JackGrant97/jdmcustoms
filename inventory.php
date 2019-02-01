@@ -121,12 +121,6 @@
   endif;
      ?>
 
-   <?php else: ?>
-     TEST
-     <?php
-   endif;
-      ?>
-
 
         <!--Footer-->
       <div class="footer">
