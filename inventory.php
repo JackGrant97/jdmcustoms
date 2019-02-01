@@ -69,6 +69,9 @@
     </header>
   <body background="assets/CarBG7.jpg" width="100%" height="100%" text="white">
 	 <main>
+     <?php
+       if (isset($_SESSION['userid'])) :
+     ?>
      <div class="container">
        <form action="search.php" method="POST">
          <input type="text" name="search" placeholder="Search">
@@ -113,6 +116,15 @@
          ?>
       </div>
     </div>
+     <?php
+       endwhile
+       else :
+      ?>
+      <p> TEST </p>
+      <?php
+    endwhile;
+      ?>
+
 	  </main>
 
 
