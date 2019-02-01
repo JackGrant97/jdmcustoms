@@ -116,13 +116,13 @@
          ?>
       </div>
     </div>
-     <?php
-   endwhile;
-       else :
+  <?php
+endif;
+else :
       ?>
       <p> TEST </p>
       <?php
-    endwhile;
+endif;
       ?>
 
 	  </main>
