@@ -111,6 +111,7 @@
             <div class="input-field col s12 m12 l12">
               <input id="date" name="date" type="date" class="validate">
               <label for="date">Date of Birth</label>
+              <input type="submit">
             </div>
           </div>
           <div class="row">
