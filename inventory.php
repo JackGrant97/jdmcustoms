@@ -123,6 +123,7 @@
     <?php
     if (isset($_SESSION ['userid']) < 1):
     ?>
+    <p>Please Log In or Register an Account To View our Inventory! </p>
     <?php
     endif;
      ?>
