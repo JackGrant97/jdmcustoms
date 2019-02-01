@@ -119,8 +119,9 @@
 	  </main>
     <?php
   endif;
-  else :
      ?>
+
+   <?php else: ?>
      TEST
      <?php
    endif;
