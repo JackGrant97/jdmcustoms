@@ -292,8 +292,7 @@ main
 {
   display: block;
   width: auto;
-  height: auto;
-  max-height: 250px;
+  height: 250px;
 }
 
 .card-content
