@@ -73,10 +73,12 @@
      if (isset($_SESSION ['userid']) >= 1):
      ?>
      <div class="container">
-      <form action="search.php" method="POST">
-        <input type="text" name="search" placeholder="Search">
-        <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
-      </form>
+      <div class="searchbar">
+        <form action="search.php" method="POST">
+          <input type="text" name="search" placeholder="Search">
+          <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
+        </form>
+      </div>
       <div class="row">
          <?php
            $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .

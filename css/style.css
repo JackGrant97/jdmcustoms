@@ -243,7 +243,10 @@ main
     padding-top: 5%;
 }
 
-
+.searchbar
+{
+  padding-top: 4%;
+}
 .input-field:selected
 {
   background-color: black;
