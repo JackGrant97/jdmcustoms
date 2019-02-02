@@ -289,8 +289,7 @@ main
 
 .activator
 {
-  height: auto;
+  height: 250px;
   width: auto;
-  max-height: 250px;
   object-fit: contain;
 }
