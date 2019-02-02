@@ -296,7 +296,14 @@ main
   max-width: 400px;
   max-width: 400px;
 }
-
+.card-image waves-effect waves-block waves-light
+{
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-width: 400px;
+}
 .card-content
 {
   object-position: bottom;
