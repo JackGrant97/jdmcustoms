@@ -293,8 +293,8 @@ main
   display: block;
   width: auto;
   height: auto;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 200px;
 }
 
 .card-content
