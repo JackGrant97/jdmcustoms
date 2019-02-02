@@ -3371,19 +3371,6 @@ nav ul a span.badge {
   width: 90%;
 }
 
-@media only screen and (min-width: 601px) {
-  .container {
-    width: 85%;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 70%;
-  }
-}
-
-
 .section {
   padding-top: 1rem;
   padding-bottom: 1rem;
