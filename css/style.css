@@ -211,7 +211,6 @@ main
   border-radius: 5px;
   padding: 16px;
   margin-bottom: 20px;
-  height: 450px;
 }
 
 .btn:hover
@@ -285,4 +284,11 @@ main
 .notifytext
 {
   text-align: center;
+}
+
+
+.activator
+{
+  height: auto;
+  max-height: 250px;
 }
