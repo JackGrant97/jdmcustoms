@@ -285,3 +285,10 @@ main
 {
   text-align: center;
 }
+
+
+.activator
+{
+  height: auto;
+  max-height: 250px;
+}
