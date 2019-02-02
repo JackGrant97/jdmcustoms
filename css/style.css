@@ -291,19 +291,10 @@ main
 .activator
 {
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 400px;
-  max-width: 400px;
+  width: 400px;
+  height: 400px;
 }
-.card-image waves-effect waves-block waves-light
-{
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 400px;
-  max-width: 400px;
-}
+
 .card-content
 {
   object-position: bottom;
