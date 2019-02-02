@@ -286,3 +286,8 @@ main
   width: auto;
   object-fit: contain;
 }
+
+.moredetailsbtn
+{
+  padding-top: 1%;
+}
