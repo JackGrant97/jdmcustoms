@@ -291,8 +291,10 @@ main
 .activator
 {
   display: block;
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .card-content
