@@ -243,20 +243,6 @@ main
     padding-top: 5%;
 }
 
-.searchbar
-{
-  max-width: 100%;
-  padding-top: 5%;
-}
-
-.search
-{
-    background-color: black;
-    border-style: hidden;
-    border-color: blue;
-    text-decoration-color: white;
-
-}
 
 .input-field:selected
 {
