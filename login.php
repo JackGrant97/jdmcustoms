@@ -99,11 +99,7 @@
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
-          $Uid = intval($_GET['UserID']);
-          $sql =  mysqli_query($con,"SELECT FirstName FROM users WHERE UserID = ".$Uid);
-          if(mysqli_num_rows($sql)){
-            $User = mysqli_fetch_array($sql);
-          }
+        
             echo '<p><b>You are Logged In!</b></p>';
             echo $firstname;
         }
