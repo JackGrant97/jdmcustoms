@@ -74,7 +74,7 @@
     $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
     mysqli_error($con));
 
-    $id = intval($_GET['userid']);
+    $id = intval($_GET['UserID']);
     $sql = mysqli_query($con,"SELECT * FROM users WHERE UserID = ".$id);
     if(mysqli_num_rows($sql)){
       $user = mysqli_fetch_array($sql);
@@ -110,7 +110,7 @@
         if (isset($_SESSION['userid'])) {
 
           echo '<p><b>You are Logged In!</b></p>';
-          echo $user;
+          echo $user['FirstName'];
         }
         else {
           echo '<p><b>You are Logged out!</b></p>';
