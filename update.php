@@ -76,7 +76,7 @@
    <div class="container">
     <div class="register">
       <div class="row">
-        <form class="col s12 m12 l12" action="includes/signup.inc.php" method="post">
+        <form class="col s12 m12 l12" action="includes/update.inc.php" method="post">
           <div class="row">
             <div class="input-field col s6 m6 l6">
               <input id="first_name" name="FirstName" type="text" class="validate">
