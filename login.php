@@ -70,6 +70,16 @@
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
   <main>
+    <?php
+    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
+    mysqli_error($con));
+
+    $id = intval($_GET['userid']);
+    $sql = mysqli_query($con,"SELECT FirstName FROM users WHERE UserID = ".$id);
+    if(mysqli_num_rows($sql)){
+      $user = mysqli_fetch_array($sql);
+    }
+     ?>
    <div class="container">
     <div class="login">
       <div class="row">
@@ -98,8 +108,9 @@
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
+
           echo '<p><b>You are Logged In!</b></p>';
-          echo $firstname;
+          echo $user['FirstName'];
         }
         else {
           echo '<p><b>You are Logged out!</b></p>';
