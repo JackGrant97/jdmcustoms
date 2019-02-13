@@ -98,7 +98,8 @@
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
-          echo '<p><b>Welcome</b></p>'. $firstname;
+          echo '<p><b>Welcome</b></p>'. $_SESSION['FirstName'];
+          echo $firstname;
         }
         else {
           echo '<p><b>You are Logged out!</b></p>';
