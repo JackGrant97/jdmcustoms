@@ -98,7 +98,7 @@
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
-          echo '<p><b>Welcome</b></p>'. $_SESSION['FirstName'];
+          echo '<p><b>Welcome Back</b></p>'. $_SESSION['FirstName'];
           echo $firstname;
         }
         else {
