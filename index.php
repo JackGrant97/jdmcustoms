@@ -39,6 +39,9 @@
             <li><a href="#!">three</a></li>
           </ul>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+          <script>
+            $(".dropdown-trigger").dropdown();
+          </script>
           <?php
             if (isset($_SESSION['userid'])) {
               echo '<li><a href="includes/logout.inc.php">logout</a></li>';
@@ -49,10 +52,7 @@
             }
            ?>
 				</ul>
-			</div>
-      <script>
-        $(".dropdown-trigger").dropdown();
-      </script>
+			</div>  
 		</nav>
         <!--Side Nav-->
          <ul id="slide-out" class="side-nav">
