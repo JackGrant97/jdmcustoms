@@ -32,16 +32,6 @@
 				  <li><a href="index.php">Home</a></li>
 					<li><a href="inventory.php">Inventory</a></li>
 				  <li><a href="about.php">About</a></li>
-          <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-          </ul>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-          <script>
-            $(".dropdown-trigger").dropdown();
-          </script>
           <?php
             if (isset($_SESSION['userid'])) {
               echo '<li><a href="includes/logout.inc.php">logout</a></li>';
@@ -52,7 +42,7 @@
             }
            ?>
 				</ul>
-			</div>  
+			</div>
 		</nav>
         <!--Side Nav-->
          <ul id="slide-out" class="side-nav">
