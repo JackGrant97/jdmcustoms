@@ -110,7 +110,7 @@
         if (isset($_SESSION['userid'])) {
 
           echo '<p><b>You are Logged In!</b></p>';
-          echo $user['FirstName'];
+          echo $user;
         }
         else {
           echo '<p><b>You are Logged out!</b></p>';
