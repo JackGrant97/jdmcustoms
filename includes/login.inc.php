@@ -5,6 +5,7 @@ if (isset($_POST['login-submit'])) {
 
   $mail = $_POST['email'];
   $password = $_POST['password'];
+  $firstname = $_POST['FirstName'];
 
   //checks if both fields contain information
   if (empty($mail) || empty($password)) {
