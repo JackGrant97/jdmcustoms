@@ -5,7 +5,6 @@ if (isset($_POST['login-submit'])) {
 
   $mail = $_POST['email'];
   $password = $_POST['password'];
-  $firstname = $_POST['FirstName'];
   $_SESSION['FirstName'] = $firstname;
 
   //checks if both fields contain information
