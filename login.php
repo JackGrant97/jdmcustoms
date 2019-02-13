@@ -98,8 +98,8 @@
     <div class="status">
       <?php
         if (isset($_SESSION['userid'])) {
-
-          echo '<p><b>Welcom</b></p>'.$_SESSION['FirstName'];
+          $sql = "SELECT * FROM users WHERE UserID =;".$_SESSION['userid'];
+          echo '<p><b>Welcome</b></p>'.$firstname;
 
         }
         else {
