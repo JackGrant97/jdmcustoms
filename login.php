@@ -97,9 +97,14 @@
   </div>
     <div class="status">
       <?php
-        if (isset($_SESSION['userid'])) {
+        if (isset($_SESSION['UserID'])) {
           echo '<p><b>You are Logged In!</b></p>';
-          echo $firstname['FirstName'];
+
+          $id = intval($_GET['userid']);
+          $sql = mysqli_query($con,"SELECT first_name FROM users WHERE UserID = ".$id);
+          if(mysqli_num_rows($sql)){
+            $user = mysqli_fetch_array($sql);
+            echo $user['UserID'];
         }
         else {
           echo '<p><b>You are Logged out!</b></p>';
