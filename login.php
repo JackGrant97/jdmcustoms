@@ -105,7 +105,7 @@
             $User = mysqli_fetch_array($sql);
           }
             echo '<p><b>You are Logged In!</b></p>';
-            echo $Uid['FirstName'];
+            echo $firstname;
         }
         else {
           echo '<p><b>You are Logged out!</b></p>';
