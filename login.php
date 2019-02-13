@@ -75,7 +75,7 @@
     mysqli_error($con));
 
     $id = intval($_GET['userid']);
-    $sql = mysqli_query($con,"SELECT FirstName FROM users WHERE UserID = ".$id);
+    $sql = mysqli_query($con,"SELECT * FROM users WHERE UserID = ".$id);
     if(mysqli_num_rows($sql)){
       $user = mysqli_fetch_array($sql);
     }
