@@ -38,7 +38,7 @@
             <li class="divider"></li>
             <li><a href="#!">three</a></li>
           </ul>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
           <?php
             if (isset($_SESSION['userid'])) {
               echo '<li><a href="includes/logout.inc.php">logout</a></li>';
