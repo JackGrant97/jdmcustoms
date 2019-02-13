@@ -99,7 +99,8 @@
       <?php
         if (isset($_SESSION['UserID'])) {
           echo '<p><b>You are Logged In!</b></p>';
-
+          $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
+          mysqli_error($con));
           $id = intval($_GET['userid']);
           $sql = mysqli_query($con,"SELECT first_name FROM users WHERE UserID = ".$id);
           if(mysqli_num_rows($sql)){
