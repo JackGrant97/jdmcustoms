@@ -50,6 +50,9 @@
            ?>
 				</ul>
 			</div>
+      <script>
+        $(".dropdown-trigger").dropdown();
+      </script>
 		</nav>
         <!--Side Nav-->
          <ul id="slide-out" class="side-nav">
