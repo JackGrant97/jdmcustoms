@@ -2,7 +2,6 @@
 if (isset($_POST['login-submit'])) {
 
   require 'dbconnect.php';
-
   $mail = $_POST['email'];
   $password = $_POST['password'];
   $_SESSION['FirstName'] = $firstname;
