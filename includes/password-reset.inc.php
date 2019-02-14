@@ -50,8 +50,25 @@ if (isset($_POST["reset-request-submit"])) {
     $headers .= "Reply-To: g1492622@student.southstaffs.ac.uk\r\n";
     $headers .= "Content-type: text/html\r\n";
 
-    mail($to, $subject, $message, $headers);
+    use PHPMailer\src\PHPMailer;
+    use PHPMailer\src\Exception;
 
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->SMTPAuth();
+    $mail->SMTPsecure = 'ssl';
+    $mail->Host = 'smtp.gmail.com'
+    $mail->Port = '465';
+    $mail->isHTML();
+    $mail->Username = 'g1492622@student.southstaffs.ac.uk';
+    $mail->Password = '150597';
+
+    mail($to, $subject, $message, $headers);
+    $mail->Send();
     header("Location: ../reset-password.php?reset=succcess");
 
 } else {
