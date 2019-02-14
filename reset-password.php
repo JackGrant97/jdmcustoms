@@ -72,6 +72,24 @@
   </header>
 <body background="assets/bg.jpeg" width="100%" height="100%">
   <main>
+    <?php
+    require ('PHPMailer/src/PHPMailer.php');
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'ssl';
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port = '465';
+    $mail->isHTML();
+    $mail->username = 'g1492622@student.southstaffs.ac.uk'
+    $mail->Password = '150597';
+    $mail->SetFrom('no-reply@JDMCustoms');
+    $mail->Subject = 'Password Reset';
+    $mail->body = 'Here it the link to reset your email';
+
+
+    $mail->Send();
+    ?>
    <div class="container">
     <div class="login">
       <div class="row">
