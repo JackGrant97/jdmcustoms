@@ -120,7 +120,8 @@
               <input id="password" name="password" type="password" class="validate">
               <label for="password">Password</label>
             </div>
-          </div><div class="row">
+          </div>
+          <div class="row">
             <div class="input-field col s12 m12 l12">
               <input id="password" name="password-repeat" type="password" class="validate">
               <label for="password">Confirm Password</label>

@@ -75,27 +75,45 @@
    <div class="container">
     <div class="login">
       <div class="row">
-        <form class="col s12 m12 l12" action="includes/password-reset.inc.php" method="post">
-          <div class="row">
-            <div class="input-field col s12 m12 l12">
-              <input id="email" name="email" type="email" class="validate">
-              <label for="email">E-mail</label>
-            </div>
-          </div>
-          <div class="submit">
-              <button class="waves-effect waves-light btn" type="submit" name="reset-request-submit">Reset Password
-                <i class="material-icons right">add</i>
-              </button>
-          </div>
-        </form>
-        <br> <p>An e-mail will be sent to you with details on how to reset your password.</p>
+
         <?php
-          if (isset($_GET["reset"])) {
-            if ($_GET["reset"] == "succcess") {
-              echo '<p class"signupsuccess">Check your e-mail!</p>';
+          $selector = $_GET["selector"];
+          $validator = $_GET["validator"];
+
+          if (empty($selector) || empty($validator)) {
+            echo "Could not validate your request!";
+          } else {
+            if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false) {
+              ?>
+
+              <form class="col s12 m12 l12" action="includes/password-reset.inc.php" method="post">
+                <input name="selector" type="hidden" value="<?php echo $selector?>">
+                <input name="validator" type="hidden" value="<?php echo $validator?>">
+                <div class="row">
+                  <div class="input-field col s12 m12 l12">
+                    <input id="password" name="password" type="password" class="validate">
+                    <label for="password">Enter A New Password</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12 m12 l12">
+                    <input id="password" name="password-repeat" type="password" class="validate">
+                    <label for="password">Repeat New Password</label>
+                  </div>
+                </div>
+                <p>An e-mail will be sent to you with details on how to reset your password.</p>
+                <div class="submit">
+                    <button class="waves-effect waves-light btn" type="submit" name="reset-request-submit">Reset Password
+                      <i class="material-icons right">add</i>
+                    </button>
+                </div>
+              </form>
+
+              <?php
             }
           }
         ?>
+
       </div>
     </div>
   </div>
