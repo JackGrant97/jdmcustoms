@@ -82,13 +82,13 @@
               <label for="email">E-mail</label>
             </div>
           </div>
-          <br> <p>An e-mail will be sent to you with details on how to reset your password.</p>
+          <p>An e-mail will be sent to you with details on how to reset your password.</p>
           <div class="submit">
               <button class="waves-effect waves-light btn" type="submit" name="reset-request-submit">Reset Password
                 <i class="material-icons right">add</i>
               </button>
           </div>
-        </form>      
+        </form>
         <?php
           if (isset($_GET["reset"])) {
             if ($_GET["reset"] == "succcess") {
