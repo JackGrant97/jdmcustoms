@@ -59,7 +59,7 @@ if (isset($_POST["reset-request-submit"])) {
 
     $mail = new PHPMailer();
     $mail->isSMTP();
-    $mail->SMTPAuth();
+    $mail->SMTPAuth == true;
     $mail->SMTPsecure = 'ssl';
     $mail->Host = 'smtp.gmail.com'
     $mail->Port = '465';
