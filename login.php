@@ -93,6 +93,7 @@
                 <i class="material-icons right">add</i>
               </button>
               <br>
+              <br>
               <a href="reset-password.php">Forgot your password?</a>
           </div>
         </form>
