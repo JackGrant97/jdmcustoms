@@ -75,7 +75,7 @@
    <div class="container">
     <div class="login">
       <div class="row">
-        <form class="col s12 m12 l12" action="includes/login.inc.php" method="post">
+        <form class="col s12 m12 l12" action="includes/password-reset.inc.php" method="post">
           <div class="row">
             <div class="input-field col s12 m12 l12">
               <input id="email" name="email" type="email" class="validate">
@@ -84,7 +84,7 @@
             <br> <p>An e-mail will be sent to you with details on how to reset your password.</p>
           </div>
           <div class="submit">
-              <button class="waves-effect waves-light btn" type="submit" name="login-submit">Reset Password
+              <button class="waves-effect waves-light btn" type="submit" name="reset-request-submit">Reset Password
                 <i class="material-icons right">add</i>
               </button>
           </div>
