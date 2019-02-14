@@ -43,7 +43,6 @@
             echo '<li><a href="includes/signup.inc.php">Register</a></li>';
           }
          ?>
-
       </ul>
     </div>
   </nav>

@@ -92,6 +92,7 @@
               <button class="waves-effect waves-light btn" type="submit" name="login-submit">LOGIN
                 <i class="material-icons right">add</i>
               </button>
+              <a href="reset-password.php">Forgot your password?></a>
           </div>
         </form>
       </div>
