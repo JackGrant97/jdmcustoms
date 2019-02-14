@@ -81,6 +81,7 @@
               <input id="email" name="email" type="email" class="validate">
               <label for="email">E-mail</label>
             </div>
+            <br> <p>An e-mail will be sent to you with details on how to reset your password.</p>
           </div>
           <div class="submit">
               <button class="waves-effect waves-light btn" type="submit" name="login-submit">Reset Password
