@@ -83,7 +83,7 @@
             </div>
           </div>
           <div class="submit">
-              <button class="waves-effect waves-light btn" type="submit" name="login-submit">LOGIN
+              <button class="waves-effect waves-light btn" type="submit" name="login-submit">Reset Password
                 <i class="material-icons right">add</i>
               </button>
           </div>
