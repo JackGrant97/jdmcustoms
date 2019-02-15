@@ -12,11 +12,11 @@ if (isset($_POST['signup-submit'])) {
   $password = $_POST['password'];
   $passwordRepeat = $_POST['password-repeat'];
   $Dob = $_POST['Dob'];
-  $num = $_POST['telephone'];
+  $telephone = $_POST['telephone'];
 
-  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob)) || empty($num)){
+  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob)) || empty($telephone)){
     header("Location: ../register.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
-    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob."&telephone=".$num);
+    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob."&telephone=".$telephone);
     exit();
   }
   else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$firstname) && !preg_match("/^[a-zA-Z]*$/",$lastname) && !preg_match("/^[a-zA-Z]*$/",$city)) {
@@ -76,7 +76,7 @@ if (isset($_POST['signup-submit'])) {
           //Uses BCrypt to hash users password
           $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
 
-          mysqli_stmt_bind_param($stmt, "sssssssss", $firstname, $lastname, $email, $hashedpassword, $postcode, $address, $city, $Dob, $num);
+          mysqli_stmt_bind_param($stmt, "sssssssss", $firstname, $lastname, $email, $hashedpassword, $postcode, $address, $city, $Dob, $telephone);
           mysqli_stmt_execute($stmt);
           header("Location: ../register.php?signup=success");
           exit();
