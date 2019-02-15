@@ -99,6 +99,12 @@
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12">
+              <input id="telephone" name="telephone" type="int" class="validate">
+              <label for="telephone">Telephone Number</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m12 l12">
               <input id="address" name="address" type="text" class="validate">
               <label for="address">Address</label>
             </div>
