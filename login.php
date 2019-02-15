@@ -92,16 +92,6 @@
               <button class="waves-effect waves-light btn" type="submit" name="login-submit">LOGIN
                 <i class="material-icons right">add</i>
               </button>
-              <br>
-              <br>
-              <?php
-              if (isset($_GET["newpwd"])) {
-                if ($_GET["newpwd"] == "passwordupdated") {
-                  echo '<p class"signupsuccess">Your password has been reset! </p>';
-                }
-              }
-              ?>
-              <a href="reset-password.php">Forgot your password?</a>
           </div>
         </form>
       </div>
