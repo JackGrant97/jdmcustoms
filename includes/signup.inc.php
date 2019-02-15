@@ -16,7 +16,7 @@ if (isset($_POST['signup-submit'])) {
 
   if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob)) || empty($num)){
     header("Location: ../register.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
-    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob. "&telephone=".$num);
+    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob."&telephone=".$num);
     exit();
   }
   else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$firstname) && !preg_match("/^[a-zA-Z]*$/",$lastname) && !preg_match("/^[a-zA-Z]*$/",$city)) {
