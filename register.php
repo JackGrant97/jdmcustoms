@@ -79,11 +79,11 @@
         <form class="col s12 m12 l12" action="includes/signup.inc.php" method="post">
           <div class="row">
             <div class="input-field col s6 m6 l6">
-              <input id="first_name" name="FirstName" type="text" pattern="[a-zA-Z]+" title="Error! Please Use Letters" class="validate">
+              <input id="first_name" name="FirstName" type="text" class="validate">
               <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s6 m6 l6">
-              <input id="last_name" name="LastName" type="text" pattern="[a-zA-Z]+" title="Error! Please Use Letters" class="validate">
+              <input id="last_name" name="LastName" type="text" class="validate">
               <label for="last_name">Last Name</label>
             </div>
           </div>
@@ -93,7 +93,7 @@
               <label for="postcode">Postcode</label>
             </div>
             <div class="input-field col s6 m6 l6">
-              <input id="City" name="City" type="text" pattern="[a-zA-Z]+" title="Error! Please Use Letters" class="validate">
+              <input id="City" name="City" type="text"class="validate">
               <label for="City">City</label>
             </div>
           </div>
