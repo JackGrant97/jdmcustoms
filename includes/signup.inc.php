@@ -13,7 +13,7 @@ if (isset($_POST['signup-submit'])) {
   $passwordRepeat = $_POST['password-repeat'];
   $Dob = $_POST['Dob'];
 
-  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || (empty($Dob)) {
+  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob)) {
     header("Location: ../register.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
     "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob);
     exit();
