@@ -99,7 +99,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12">
-              <input id="telephone" name="telephone" type="text" pattern="[0-9]" title="Error! Please Use Numbers" class="validate">
+              <input id="telephone" name="telephone" type="text" class="validate">
               <label for="telephone">Telephone Number</label>
             </div>
           </div>
