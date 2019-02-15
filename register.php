@@ -93,7 +93,7 @@
               <label for="postcode">Postcode</label>
             </div>
             <div class="input-field col s6 m6 l6">
-              <input id="City" name="City" type="text"class="validate">
+              <input id="City" name="City" type="text" class="validate">
               <label for="City">City</label>
             </div>
           </div>
