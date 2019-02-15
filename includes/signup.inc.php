@@ -14,7 +14,7 @@ if (isset($_POST['signup-submit'])) {
   $Dob = $_POST['Dob'];
   $telephone = $_POST['telephone'];
 
-  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob)) {
+  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob) || empty($telephone)) {
     header("Location: ../register.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
     "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob."&telephone=".$telephone);
     exit();
