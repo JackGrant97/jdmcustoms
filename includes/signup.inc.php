@@ -16,7 +16,7 @@ if (isset($_POST['signup-submit'])) {
 
   if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob)) {
     header("Location: ../register.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
-    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob);
+    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob."&telephone=".$telephone);
     exit();
   }
   else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$firstname) && !preg_match("/^[a-zA-Z]*$/",$lastname) && !preg_match("/^[a-zA-Z]*$/",$city)) {
@@ -66,7 +66,7 @@ if (isset($_POST['signup-submit'])) {
       }
       else {
         //inputs data entered from the register page into the database
-        $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, City, Dob) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO users (FirstName, LastName, email, password, postcode, address, City, Dob, telephone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../register.php?error=sqlerror02");
@@ -76,7 +76,7 @@ if (isset($_POST['signup-submit'])) {
           //Uses BCrypt to hash users password
           $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
 
-          mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $email, $hashedpassword, $postcode, $address, $city, $Dob);
+          mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $email, $hashedpassword, $postcode, $address, $city, $Dob, $telephone);
           mysqli_stmt_execute($stmt);
           header("Location: ../register.php?signup=success");
           exit();
