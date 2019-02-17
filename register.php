@@ -79,11 +79,11 @@
         <form class="col s12 m12 l12" action="includes/signup.inc.php" method="post">
           <div class="row">
             <div class="input-field col s6 m6 l6">
-              <input id="first_name" name="FirstName" type="text" pattern="[a-zA-Z]" class="validate">
+              <input id="first_name" name="FirstName" type="text" pattern="[A-Za-z]+" class="validate">
               <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s6 m6 l6">
-              <input id="last_name" name="LastName" type="text" pattern="[a-zA-Z]" class="validate">
+              <input id="last_name" name="LastName" type="text" pattern="[A-Za-z]+" class="validate">
               <label for="last_name">Last Name</label>
             </div>
           </div>
@@ -93,13 +93,13 @@
               <label for="postcode">Postcode</label>
             </div>
             <div class="input-field col s6 m6 l6">
-              <input id="City" name="City" type="text" pattern="[a-zA-Z]" class="validate">
+              <input id="City" name="City" type="text" pattern="[A-Za-z]+" class="validate">
               <label for="City">City</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12">
-              <input id="address" name="address" type="text" class="validate">
+              <input id="address" name="address" type="text" pattern="[A-Za-z0-9]+" class="validate">
               <label for="address">Address</label>
             </div>
           </div>
