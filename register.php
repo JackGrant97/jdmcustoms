@@ -89,7 +89,7 @@
           </div>
           <div class="row">
             <div class="input-field col s6 m6 l6">
-              <input id="postcode" name="postcode" type="text" pattern="[A-Za-z ]+" class="validate">
+              <input id="postcode" name="postcode" type="text" pattern="[A-Za-z0-9 ]+" class="validate">
               <label for="postcode">Postcode</label>
             </div>
             <div class="input-field col s6 m6 l6">
