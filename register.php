@@ -105,7 +105,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12">
-              <input id="telephone" name="telephone" type="telephone" pattern="[0-9]+" class="validate">
+              <input id="telephone" name="telephone" type="text" pattern="[0-9]+" class="validate">
               <label for="telephone">Address</label>
             </div>
           </div>
