@@ -15,6 +15,7 @@ if (isset($_POST['update-submit'])) {
   $address = $_POST['address'];
   $Dob = $_POST['Dob'];
   $Telephone = $_POST['telephone'];
+
   $id = $_SESSION['UserID'];
 
   if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($Dob) || empty($Telephone)) {
