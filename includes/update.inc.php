@@ -9,9 +9,6 @@ if (isset($_POST['update-submit'])) {
   $postcode = $_POST['postcode'];
   $city = $_POST['City'];
   $address = $_POST['address'];
-  $email = $_POST['email'];
-  $password = $_POST['password'];
-  $passwordRepeat = $_POST['password-repeat'];
   $Dob = $_POST['Dob'];
   $Telephone = $_POST['telephone'];
   $id = $_SESSION['UserID'];
