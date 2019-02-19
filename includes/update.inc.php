@@ -47,7 +47,7 @@ if (isset($_POST['update-submit'])) {
       }
       else {
         //inputs data entered from the register page into the database
-        $sql = "UPDATE users SET FirstName = ?, LastName = ?, email = ?, postcode = ?, City = ?, Dob = ?, telephone = ? WHERE UserID = $id";
+        $sql = "UPDATE users SET FirstName = ?, LastName = ?, postcode = ?, address = ?, City = ?, Dob = ?, telephone = ? WHERE UserID = $id";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../update.php?error=sqlerror02");
@@ -55,7 +55,7 @@ if (isset($_POST['update-submit'])) {
         }
         else {
           //Uses BCrypt to hash users password
-          mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $postcode, $address, $city, $Dob, $Telephone);
+          mysqli_stmt_bind_param($stmt, "sssssss", $firstname, $lastname, $postcode, $address, $city, $Dob, $Telephone);
           mysqli_stmt_execute($stmt);
           header("Location: ../update.php?update=success");
           exit();
