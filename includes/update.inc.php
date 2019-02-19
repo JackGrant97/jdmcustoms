@@ -16,18 +16,9 @@ if (isset($_POST['update-submit'])) {
   $Telephone = $_POST['telephone'];
   $id = $_SESSION['UserID'];
 
-  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($Dob) || empty($Telephone)) {
+  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($Dob) || empty($Telephone)) {
     header("Location: ../update.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
-    "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob."&telephone=".$Telephone);
-    exit();
-  }
-  else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$firstname) && !preg_match("/^[a-zA-Z]*$/",$lastname) && !preg_match("/^[a-zA-Z]*$/",$city)) {
-      header("Location: ../update.php?error=invalidmailfirstnamelastnamecity&address=".$address);
-      exit();
-  }
-  else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header("Location: ../update.php?error=invalidmail&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
-    "&City=".$city."&address=".$address);
+    "&City=".$city."&address=".$address."&Dob=".$Dob."&telephone=".$Telephone);
     exit();
   }
   else if (!preg_match("/^[a-zA-Z]*$/",$firstname)) {
@@ -44,14 +35,6 @@ if (isset($_POST['update-submit'])) {
     header("Location: ../update.php?error=invalidCity&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode."&address=".$address);
     exit();
   }
-  else {
-
-    $sql = "SELECT email FROM users WHERE email=?";
-    $stmt = mysqli_stmt_init($con);
-    if (!mysqli_stmt_prepare($stmt, $sql)) {
-      header("Location: ../update.php?error=sqlerror01");
-      exit();
-    }
     else {
       //checks if email entered on register page is already in use
       mysqli_stmt_bind_param($stmt, "s", $email);
@@ -64,7 +47,7 @@ if (isset($_POST['update-submit'])) {
       }
       else {
         //inputs data entered from the register page into the database
-        $sql = "UPDATE users SET FirstName = ?, LastName = ?, email = ?, postcode = ?, address = ?, City = ?, Dob = ?, telephone = ? WHERE UserID = $id";
+        $sql = "UPDATE users SET FirstName = ?, LastName = ?, email = ?, postcode = ?, City = ?, Dob = ?, telephone = ? WHERE UserID = $id";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../update.php?error=sqlerror02");
@@ -72,14 +55,13 @@ if (isset($_POST['update-submit'])) {
         }
         else {
           //Uses BCrypt to hash users password
-          mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $email, $postcode, $address, $city, $Dob, $Telephone);
+          mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $postcode, $address, $city, $Dob, $Telephone);
           mysqli_stmt_execute($stmt);
           header("Location: ../update.php?update=success");
           exit();
         }
       }
     }
-  }
   mysqli_stmt_close($stmt);
   mysqli_close($con);
 }
