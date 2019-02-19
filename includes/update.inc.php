@@ -4,6 +4,10 @@ if (isset($_POST['update-submit'])) {
 
   require 'dbconnect.php';
 
+  $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
+  mysqli_error($con));
+
+
   $firstname = $_POST['FirstName'];
   $lastname = $_POST['LastName'];
   $postcode = $_POST['postcode'];
