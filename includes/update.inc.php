@@ -64,7 +64,7 @@ if (isset($_POST['update-submit'])) {
       }
       else {
         //inputs data entered from the register page into the database
-        $sql = "UPDATE users SET FirstName =?, LastName =?, email=?, password=?, postcode=?, address=?, City=?, Dob=?, telephone=? WHERE UserID = $id";
+        $sql = "UPDATE users SET FirstName = ?, LastName = ?, email = ?, password = ?, postcode = ?, address = ?, City = ?, Dob = ?, telephone = ? WHERE UserID = $id";
         $stmt = mysqli_stmt_init($con);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../update.php?error=sqlerror02");
