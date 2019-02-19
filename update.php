@@ -110,12 +110,6 @@
            </div>
            <div class="row">
              <div class="input-field col s12 m12 l12">
-               <input id="email" name="email" type="email" class="validate">
-               <label for="email">E-mail</label>
-             </div>
-           </div>
-           <div class="row">
-             <div class="input-field col s12 m12 l12">
                <input id="Dob" name="Dob" type="text" class="validate">
                <label for="Dob">Date of Birth (DD/MM/YYYY)</label>
              </div>
