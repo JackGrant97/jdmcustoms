@@ -32,16 +32,6 @@ if (isset($_POST['update-submit'])) {
     header("Location: ../update.php?error=invalidCity&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode."&address=".$address);
     exit();
   }
-    else {
-      //checks if email entered on register page is already in use
-      mysqli_stmt_bind_param($stmt, "s", $email);
-      mysqli_stmt_execute($stmt);
-      mysqli_stmt_store_result($stmt);
-      $resultCheck = mysqli_stmt_num_rows($stmt);
-      if ($resultCheck > 0) {
-        header("Location: ../update.php?error=emailtaken".$email);
-        exit();
-      }
       else {
         //inputs data entered from the register page into the database
         $sql = "UPDATE users SET FirstName = ?, LastName = ?, postcode = ?, address = ?, City = ?, Dob = ?, telephone = ? WHERE UserID = $id";
@@ -58,7 +48,6 @@ if (isset($_POST['update-submit'])) {
           exit();
         }
       }
-    }
   mysqli_stmt_close($stmt);
   mysqli_close($con);
 }
