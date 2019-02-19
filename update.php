@@ -120,18 +120,6 @@
                <label for="Dob">Date of Birth (DD/MM/YYYY)</label>
              </div>
            </div>
-           <div class="row">
-             <div class="input-field col s12 m12 l12">
-               <input id="password" name="password" type="password" class="validate">
-               <label for="password">Password</label>
-             </div>
-           </div>
-           <div class="row">
-             <div class="input-field col s12 m12 l12">
-               <input id="password" name="password-repeat" type="password" class="validate">
-               <label for="password">Confirm Password</label>
-             </div>
-           </div>
            <div class="submit">
                <button class="waves-effect waves-light btn" type="submit" name="update-submit">SIGNUP
                  <i class="material-icons right">add</i>
