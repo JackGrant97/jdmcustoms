@@ -16,7 +16,7 @@ if (isset($_POST['update-submit'])) {
   $Telephone = $_POST['telephone'];
   $id = $_SESSION['UserID'];
 
-  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($password) || empty($passwordRepeat) || empty($Dob) || empty($Telephone)) {
+  if (empty($firstname) || empty($lastname)  || empty($postcode) || empty($city) || empty($address) || empty($email) || empty($Dob) || empty($Telephone)) {
     header("Location: ../update.php?error=emptyfields&FirstName=".$firstname."&LastName=".$lastname."&postcode=".$postcode.
     "&City=".$city."&address=".$address."&email=".$email."&Dob=".$Dob."&telephone=".$Telephone);
     exit();
