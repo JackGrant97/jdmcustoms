@@ -72,7 +72,6 @@ if (isset($_POST['update-submit'])) {
         }
         else {
           //Uses BCrypt to hash users password
-
           mysqli_stmt_bind_param($stmt, "ssssssss", $firstname, $lastname, $email, $postcode, $address, $city, $Dob, $Telephone);
           mysqli_stmt_execute($stmt);
           header("Location: ../update.php?update=success");
