@@ -112,7 +112,7 @@
              </div>
            </div>
            <div class="submit">
-               <button href="update.php" class="waves-effect waves-light btn" type="submit" name="updatedetails">UPDATE DETAILS
+               <button href="update.php" class="waves-effect waves-light btn" name="updatedetails">UPDATE DETAILS
                  <i class="material-icons right">add</i>
                </button>
            </div>
