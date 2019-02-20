@@ -72,12 +72,24 @@
   </header>
 <body background="assets/rearlight.jpg" width="100%" height="100%">
   <main>
+    <?php
+      $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
+      mysqli_error($con));
+      $id = $_SESSION['userid'];
+      $query = "SELECT FirstName, LastName, email, postcode, address, Dob, telephone FROM users WHERE UserID = $id";
+      $result = mysqli_query($con, $query);
+
+      if ($result):
+        if(mysqli_num_rows($result) > 0):
+          while($details = mysqli_fetch_assoc($result)):
+     ?>
     <div class="container">
      <div class="register">
        <div class="row">
          <form class="col s12 m12 l12" action="includes/update.inc.php" method="post">
            <div class="row">
              <div class="input-field col s12 m12 l12">
+               <?php echo $details['FirstName'];?>
                <input id="Dob" name="Dob" type="text" class="validate">
                <label for="Dob">Date of Birth (DD/MM/YYYY)</label>
              </div>
@@ -91,6 +103,11 @@
        </div>
      </div>
    </div>
+   <?php
+      endwhile;
+    endif;
+  endif;
+   ?>
   </main>
 
   <!--Footer-->
