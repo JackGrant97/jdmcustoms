@@ -77,10 +77,11 @@
        <div class="row">
          <form class="col s12 m12 l12" action="includes/update.inc.php" method="post">
            <div class="row">
-             <div class="input-field col s6 m6 l6">
-               <input id="first_name" name="FirstName" type="text" pattern="[A-Za-z ]+" title="Error! Letters only field" class="validate">
-               <label for="first_name">First Name</label>
+             <div class="input-field col s12 m12 l12">
+               <input id="Dob" name="Dob" type="text" class="validate">
+               <label for="Dob">Date of Birth (DD/MM/YYYY)</label>
              </div>
+           </div>
            <div class="submit">
                <button class="waves-effect waves-light btn" type="submit" name="update-submit">UPDATE DETAILS
                  <i class="material-icons right">add</i>
