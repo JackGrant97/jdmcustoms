@@ -89,7 +89,7 @@
          <form class="col s12 m12 l12">
            <div class="row">
              <div class="col s12 m12 l12">
-               <h1 style="text-align:center;" ><b> Profile Details</b></h1>
+               <h3 style="text-align:center;" ><b> Profile Details</b></h3>
              </div>
            </div>
            <div class="row">
@@ -112,7 +112,7 @@
              </div>
            </div>
            <div class="submit">
-               <button class="waves-effect waves-light btn" type="submit" name="update-submit">UPDATE DETAILS
+               <button href="update.php" class="waves-effect waves-light btn" type="submit" name="updatedetails">UPDATE DETAILS
                  <i class="material-icons right">add</i>
                </button>
            </div>
