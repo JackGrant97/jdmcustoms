@@ -89,7 +89,7 @@
          <form class="col s12 m12 l12">
            <div class="row">
              <div class="col s12 m12 l12">
-               <p><b> Profile Details</b></p>
+               <h1 style="text-align:center;" ><b> Profile Details</b></h1>
              </div>
            </div>
            <div class="row">
