@@ -89,9 +89,21 @@
          <form class="col s12 m12 l12" action="includes/update.inc.php" method="post">
            <div class="row">
              <div class="input-field col s12 m12 l12">
+               <p>
                <?php echo $details['FirstName'];?>
-               <input id="Dob" name="Dob" type="text" class="validate">
-               <label for="Dob">Date of Birth (DD/MM/YYYY)</label>
+               <br>
+               <?php echo $details['LastName'];?>
+               <br>
+               <?php echo $details['email'];?>
+               <br>
+               <?php echo $details['postcode'];?>
+               <br>
+              <?php echo $details['address'];?>
+              <br>
+              <?php echo $details['Dob'];?>
+              <br>
+              <?php echo $details['telephone'];?>
+             </p>
              </div>
            </div>
            <div class="submit">
