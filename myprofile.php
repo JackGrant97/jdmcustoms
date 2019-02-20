@@ -88,7 +88,7 @@
        <div class="row">
          <form class="col s12 m12 l12" action="includes/update.inc.php" method="post">
            <div class="row">
-             <div class="input-field col s12 m12 l12">
+             <div class="col s12 m12 l12">
                <p>
                <b>First Name: </b> <?php echo $details['FirstName'];?>
                <br>
