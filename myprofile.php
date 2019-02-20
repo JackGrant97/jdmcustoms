@@ -90,19 +90,19 @@
            <div class="row">
              <div class="input-field col s12 m12 l12">
                <p>
-               <?php echo $details['FirstName'];?>
+               <b>First Name: </b> <?php echo $details['FirstName'];?>
                <br>
-               <?php echo $details['LastName'];?>
+               <b>Last Name: </b> <?php echo $details['LastName'];?>
                <br>
-               <?php echo $details['email'];?>
+               <b>E-Mail: </b> <?php echo $details['email'];?>
                <br>
-               <?php echo $details['postcode'];?>
+               <b>Postcode: </b> <?php echo $details['postcode'];?>
                <br>
-              <?php echo $details['address'];?>
+              <b>Address: </b> <?php echo $details['address'];?>
               <br>
-              <?php echo $details['Dob'];?>
+              <b>Date of Birth: </b> <?php echo $details['Dob'];?>
               <br>
-              <?php echo $details['telephone'];?>
+              <b>Telephone: </b> <?php echo $details['telephone'];?>
              </p>
              </div>
            </div>
