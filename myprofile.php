@@ -86,7 +86,7 @@
     <div class="container">
      <div class="register">
        <div class="row">
-         <form class="col s12 m12 l12" action="includes/update.inc.php" method="post">
+         <form class="col s12 m12 l12">
            <div class="row">
              <div class="col s12 m12 l12">
                <p>
