@@ -111,10 +111,8 @@
              </p>
              </div>
            </div>
-           <div class="submit">
-               <button href="update.php" class="waves-effect waves-light btn" type="button" name="updatedetails">UPDATE DETAILS
-                 <i class="material-icons right">add</i>
-               </button>
+           <div class="change">
+               <a class="btn waves-effect" href="update.php">Update Details</a>
            </div>
          </form>
        </div>
