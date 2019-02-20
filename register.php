@@ -35,7 +35,7 @@
         <li><a href="about.php">About</a></li>
         <?php
           if (isset($_SESSION['userid'])) {
-            echo '<li><a href="update.php">Edit Account</a></li>';
+            echo '<li><a href="myprofile.php">My Profile</a></li>';
             echo '<li><a href="includes/logout.inc.php">logout</a></li>';
           }
           else {
@@ -57,7 +57,7 @@
           <li><div class="divider"></div></li>
           <?php
             if (isset($_SESSION['userid'])) {
-              echo '<li><a href="update.php">Edit Account</a></li>';
+              echo '<li><a href="myprofile.php">My Profile</a></li>';
               echo '<li><a href="includes/logout.inc.php">logout</a></li>';
             }
             else {
@@ -156,7 +156,7 @@
                     <li><a href="about.php">About</a></li>
                     <?php
                       if (isset($_SESSION['userid'])) {
-                        echo '<li><a href="update.php">Edit Account</a></li>';
+                        echo '<li><a href="myprofile.php">My Profile</a></li>';
                         echo '<li><a href="includes/logout.inc.php">logout</a></li>';
                       }
                       else {
