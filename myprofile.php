@@ -89,6 +89,11 @@
          <form class="col s12 m12 l12">
            <div class="row">
              <div class="col s12 m12 l12">
+               <p><b> Profile Details</b></p>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col s12 m12 l12">
                <p>
                <b>First Name: </b> <?php echo $details['FirstName'];?>
                <br>
