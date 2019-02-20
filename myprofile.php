@@ -84,7 +84,7 @@
           while($details = mysqli_fetch_assoc($result)):
      ?>
     <div class="container">
-     <div class="register">
+     <div class="accountDetails">
        <div class="row">
          <form class="col s12 m12 l12">
            <div class="row">
