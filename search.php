@@ -90,7 +90,7 @@
 
                      $save = mysqli_query($con, $sql);
                      $sql = "INSERT INTO search (keyword, UserID) VALUES (?, ?)";
-                     mysqli_stmt_bind_param($save, "ss", $keyword, $id);
+                     mysqli_stmt_bind_param($save, "ss", $search, $id);
                      mysqli_stmt_execute($save);
 
                      if ($result):
