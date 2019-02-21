@@ -108,9 +108,10 @@
                              		 <span class="card-title activator grey-text text-lighten-3"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">more_vert</i></span>
                              		 <a class="btn waves-effect" href="product_template.php?itemID=<?php echo $product['itemID'];?>">More Details</a>
                              	 </div>
-                           		 <div class="card-reveal">
+                               <div class="card-reveal">
                              	   <span class="card-title grey-text text-darken-4"><?php echo $product['itemMake']?>: <?php echo $product['itemModel']?><br>Price: £<?php echo $product['itemPrice']?><i class="material-icons right">close</i></span>
-                             		 <p>A CPU also known as a Central Processing Unit, or processor is referred to as the brain of a computer system. A CPU completes most calculations. Without a CPU a computer system will be unable to operate as a CPU allocates tasks to each component of the system, this includes hard disks, RAM, GPU's etc.
+                             		 <p>
+                                   <?php echo $product['OwnerDesc']?>
                              		</p>
                            		</div>
                             </div>
