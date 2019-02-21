@@ -80,15 +80,17 @@
                  <?php
                    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
                    mysqli_error($con));
-
+                   $date = 'CURDATE()';
                    $uSearch = $_POST['search'];
-
+                   $id = $_SESSION['userid'];
                    if (isset($_POST['submit-search'])):
                      $search = mysqli_real_escape_string($con, $_POST['search']);
                      $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%' OR itemColour LIKE '%$search%'";
                      $result = mysqli_query($con, $query);
 
-                     $save = "INSERT INTO search (keyword) VALUES (?)";
+                     $save = "INSERT INTO search (keyword, UserID, Date) VALUES (?, ? ,?)";
+                     mysqli_stmt_bind_param($save, "ss",$uSearch, $id, $date );
+                     mysqli_stmt_execute($save);
 
                      if ($result):
                        if(mysqli_num_rows($result) > 0):
