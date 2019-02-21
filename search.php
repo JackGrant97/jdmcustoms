@@ -88,11 +88,14 @@
                      $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%' OR itemColour LIKE '%$search%'";
                      $result = mysqli_query($con, $query);
 
-                     $save = mysqli_query($con, $sql);
-                     $sql = "INSERT INTO search (keyword, UserID) VALUES (?, $id )";
-                     mysqli_stmt_bind_param($save, "ss", $save, $id);
-                     mysqli_stmt_execute($save);
-
+                     $sql = "INSERT INTO users (keyword) VALUES (?)";
+                     $stmt = mysqli_stmt_init($con);
+                     if (!mysqli_stmt_prepare($stmt, $sql)) {
+                       header("Location: ../register.php?error=sqlerror02");
+                       exit();
+                     }
+                     mysqli_stmt_bind_param($stmt, "s", $keyword);
+                     mysqli_stmt_execute($stmt);
                      if ($result):
                        if(mysqli_num_rows($result) > 0):
                          while($product = mysqli_fetch_assoc($result)):
