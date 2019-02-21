@@ -81,7 +81,8 @@
                    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
-                   $keyword = $_POST['search']
+                   $keyword = $_POST['search'];
+
                    if (isset($_POST['submit-search'])):
                      $search = mysqli_real_escape_string($con, $_POST['search']);
                      $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%' OR itemColour LIKE '%$search%'";
@@ -134,7 +135,7 @@
                  endif;
                  ?>
               </div>
-    </div>
+      </div>
 	  </main>
 
 
