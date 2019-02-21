@@ -91,7 +91,7 @@
                      $sql = "INSERT INTO users (keyword) VALUES (?)";
                      $stmt = mysqli_stmt_init($con);
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
-                       header("Location: ../register.php?error=sqlerror01");
+                       header("Location: ../search.php?error=sqlerror01");
                        exit();
                      }
                      mysqli_stmt_bind_param($stmt, "s", $keyword);
