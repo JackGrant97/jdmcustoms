@@ -87,6 +87,12 @@
                      $search = mysqli_real_escape_string($con, $_POST['search']);
                      $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%' OR itemColour LIKE '%$search%'";
                      $result = mysqli_query($con, $query);
+
+                     $save = mysqli_query($con, $sql);
+                     $sql = "INSERT INTO search (keyword, UserID) VALUES (?, ?)";
+                     mysqli_stmt_bind_param($save, "ss", $keyword, $id);
+                     mysqli_stmt_execute($save);
+
                      if ($result):
                        if(mysqli_num_rows($result) > 0):
                          while($product = mysqli_fetch_assoc($result)):
