@@ -81,14 +81,22 @@
                    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
+                   $keyword = $_POST['search']
                    if (isset($_POST['submit-search'])):
                      $search = mysqli_real_escape_string($con, $_POST['search']);
                      $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%' OR itemColour LIKE '%$search%'";
                      $result = mysqli_query($con, $query);
 
                      $save = "INSERT INTO search (keyword, UserID) VALUES (?, ?)";
-                     mysqli_stmt_bind_param($save, "ss",$search, $id);
-                     mysqli_stmt_execute($save);
+                     $stmt = mysqli_stmt_init($con);
+                     if (!mysqli_stmt_prepare($stmt, $save)) {
+                       header("Location: ../search.php?error=sqlerror02");
+                       exit();
+                     }
+                     mysqli_stmt_bind_param($stmt, "ss",$keyword, $id ;
+                     mysqli_stmt_execute($stmt);
+                     header("Location: ../search.php?search=success");
+
 
                      if ($result):
                        if(mysqli_num_rows($result) > 0):
