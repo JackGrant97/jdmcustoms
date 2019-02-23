@@ -83,7 +83,7 @@
         $sresult = mysqli_query($con, $sql);
           if ($sresult):
             if (mysqli_num_rows($sresult) > 0) :
-             while ($psearch = mysqli_fetch_assoc($sresult)) :
+             while ($psearch = mysqli_fetch_assoc($sresult)):
 
       if ($result):
         if(mysqli_num_rows($result) > 0):
