@@ -93,6 +93,9 @@
                        header("Location: ../search.php?error=sqlerror02");
                        exit();
                      }
+                     else {
+                       header("Location: ../search.php?FavoriteSearch=success");
+                     }
                    }
                    mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                    mysqli_stmt_execute($stmt);
