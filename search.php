@@ -75,6 +75,7 @@
         <form action="search.php" method="POST">
           <input type="text" name="search" placeholder="Search">
           <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
+          <button type="submit" class="btn waves-effect" name="submit-fsearch">Search</button>
         </form>
              <div class="row">
                  <?php
