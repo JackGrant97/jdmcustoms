@@ -91,9 +91,7 @@
                        header("Location: ../search.php?error=sqlerror02");
                        exit();
                      }
-                     else {
-                       header("Location: ../search.php?Favoritesearch=success".$search);
-                     }
+
                    }
                    mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                    mysqli_stmt_execute($stmt);
@@ -109,13 +107,9 @@
                        header("Location: ../search.php?error=sqlerror01");
                        exit();
                      }
-                     else {
-                       header("Location: ../search.php?search=success".$search);
-                     }
                      mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                      mysqli_stmt_execute($stmt);
-
-
+                     
                      if ($result):
                        if(mysqli_num_rows($result) > 0):
                          while($product = mysqli_fetch_assoc($result)):
