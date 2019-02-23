@@ -94,6 +94,8 @@
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
                        header("Location: ../search.php?error=sqlerror01");
                        exit();
+                     } else {
+                       header("Location: ../search.php?Favorite=success&result=".$search);
                      }
                      mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                      mysqli_stmt_execute($stmt);
@@ -113,6 +115,8 @@
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
                        header("Location: ../search.php?error=sqlerror01");
                        exit();
+                     }else {
+                       header("Location: ../search.php?Favorite=success&result=".$search);
                      }
                      mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                      mysqli_stmt_execute($stmt);
