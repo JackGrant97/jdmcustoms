@@ -75,7 +75,6 @@
         <form action="search.php" method="POST">
           <input type="text" name="search" placeholder="Search">
           <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
-          <button type="submit" class="btn waves-effect" name="submit-fsearch">Favorite Search</button>
         </form>
              <div class="row">
                  <?php
@@ -83,7 +82,7 @@
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
                    $keyword = $_POST['search'];
-                   
+
 
                    if (isset($_POST['submit-fsearch'])) {
                      $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
