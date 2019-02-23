@@ -86,7 +86,7 @@
                    $fkeyword = $_GET['search'];
 
                    if (isset($_POST['submit-fsearch'])) {
-                     $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
+                     $sql = "INSERT INTO fsearch (keyword, UserID) VALUES ($fkeyword, $id)";
                      $stmt = mysqli_stmt_init($con);
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
                        header("Location: ../search.php?error=sqlerror02");
