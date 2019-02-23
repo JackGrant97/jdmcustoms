@@ -69,7 +69,7 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-  <body background="assets/Backg.jpg" width="100%" height="100%" text="white">
+  <body background="assets/mechanic.jpeg" width="100%" height="100%" text="white">
 <main>
     </div>
          <script>
@@ -108,25 +108,6 @@
                             <br>TDP: 84 W -->
                       </div>
                     </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Download Background</div>
-                  <div class="collapsible-body">
-                      <div class="row">
-                        <div class="column column-25">
-                          <h5>Desktop</h5>
-                            <a href="assets/download/dl1080p.png" class="btn waves-effect" download="BG1080p">1920x1080</a>
-                            <a href="assets/download/1366_768.png" class="btn waves-effect" download="BG1366x768">1366x768</a>
-                        </div>
-                        <div class="column column-25">
-                            <br>
-                            <h5>Mobile</h5>
-                            <a href="assets/download/iphonx.png" class="btn waves-effect" download="BGIphoneX">IphoneX</a>
-                            <a href="assets/download/All_+_Iphones.png" class="btn waves-effect" download="BGAll+Iphones">All + Iphones</a>
-                            <a href="assets/download/galaxy_s8.png" class="btn waves-effect" download="BGS8">Galaxy S8</a>
-                        </div>
-                      </div>
                   </div>
                 </li>
                 <li>
