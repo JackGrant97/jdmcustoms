@@ -92,7 +92,7 @@
                        header("Location: ../search.php?error=sqlerror02");
                        exit();
                      }
-                     mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
+                     mysqli_stmt_bind_param($stmt, "ss", $_SESSION['search'], $id);
                      mysqli_stmt_execute($stmt);
                    }
 
