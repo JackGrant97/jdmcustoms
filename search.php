@@ -83,6 +83,7 @@
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
                    $keyword = $_POST['search'];
+                   $fkey = $_SESSION['search'];
 
 
                    if (isset($_POST['submit-fsearch'])) {
@@ -92,7 +93,7 @@
                        header("Location: ../search.php?error=sqlerror02");
                        exit();
                      }
-                     mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
+                     mysqli_stmt_bind_param($stmt, "ss", $fkey, $id);
                      mysqli_stmt_execute($stmt);
                    }
 
