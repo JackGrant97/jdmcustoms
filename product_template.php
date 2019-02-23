@@ -169,7 +169,7 @@
                 </li>
                 <div class="container">
                   <div class="buy">
-                    <a href="#!" class="btn waves-effect">Buy Now</a>
+                    <a href="buy.php" class="btn waves-effect">Buy Now</a>
                   </div>
               </div>
             </ul>
