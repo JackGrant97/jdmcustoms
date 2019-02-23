@@ -97,8 +97,9 @@
       </div>
       <div class="row">
         <div class="col s12 m12 l12">
-          <h3 style="text-align:center;" ><b>favorite search</b></h3>
+          <h3 style="text-align:center;" ><b>Favorite Search</b></h3>
         </div>
+
       </div>
     </div>
   </div>
