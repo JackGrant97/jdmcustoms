@@ -129,7 +129,7 @@
            </div>
            <div class="row">
              <div class="col s12 m12 l12">
-
+                <?php echo $psearch['keyword'];?> <br>
              </div>
            </div>
          </form>
