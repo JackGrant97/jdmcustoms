@@ -81,9 +81,7 @@
 
       $sql = "SELECT keyword FROM search WHERE UserID = $id";
         $sresult = mysqli_query($con, $sql);
-          if ($sresult):
-            if (mysqli_num_rows($sresult) > 0):
-             while ($psearch = mysqli_fetch_assoc($sresult)):
+        $psearch = mysqli_fetch_assoc($sresult);
 
       if ($result):
         if(mysqli_num_rows($result) > 0):
@@ -142,9 +140,6 @@
       endwhile;
     endif;
   endif;
-  endwhile;
-endif;
-endif;
    ?>
   </main>
 
