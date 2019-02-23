@@ -79,8 +79,6 @@
       $query = "SELECT FirstName, LastName, email, postcode, address, Dob, telephone FROM users WHERE UserID = $id";
       $result = mysqli_query($con, $query);
 
-      $PSearch = $row['keyword'];
-      
       $sql = "SELECT keyword FROM search WHERE UserID = $id ORDER by keyword ASC";
         $sresult = mysqli_query($con, $sql);
           if ($sresult):
@@ -132,8 +130,7 @@
            <div class="row">
              <div class="col s12 m12 l12">
                <P style="text-align:center;">
-
-                <?php  echo "<div> <p>".$row['keyword']."</p> </div>" ?>
+                <?php echo $psearch['keyword'];?> <br>              
               </p>
              </div>
            </div>
