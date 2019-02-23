@@ -75,7 +75,6 @@
         <form action="search.php" method="POST">
           <input type="text" name="search" placeholder="Search">
           <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
-          <button type="submit" class="btn waves-effect" name="submit-fsearch">Favorite Search</button>
         </form>
              <div class="row">
                  <?php
@@ -85,7 +84,7 @@
                    $keyword = $_POST['search'];
 
                    if (isset($_POST['submit-fsearch'])) {
-                     $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
+                     $sql = "INSERT INTO fsearch (keyword, UserID) VALUES ($keyword, $id)";
                      $stmt = mysqli_stmt_init($con);
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
                        header("Location: ../search.php?error=sqlerror02");
