@@ -95,12 +95,6 @@
           </div>
         </form>
       </div>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <h3 style="text-align:center;" ><b>FAVORITE SEARCH</b></h3>
-        </div>
-
-      </div>
     </div>
   </div>
     <div class="status">

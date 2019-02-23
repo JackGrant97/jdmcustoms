@@ -114,6 +114,12 @@
            <div class="change">
                <a class="btn waves-effect" href="update.php">Update Details</a>
            </div>
+           <div class="row">
+             <div class="col s12 m12 l12">
+               <h3 style="text-align:center;" ><b>FAVORITE SEARCH</b></h3>
+             </div>
+
+           </div>
          </form>
        </div>
      </div>
