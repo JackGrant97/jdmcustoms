@@ -107,9 +107,6 @@
                        header("Location: ../search.php?error=sqlerror01");
                        exit();
                      }
-                     else {
-                       header("Location: ../search.php?search=success".$search);
-                     }
                      mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                      mysqli_stmt_execute($stmt);
 
