@@ -86,6 +86,7 @@
 
 
                    if (isset($_POST['submit-fsearch'])) {
+                     $search = mysqli_real_escape_string($con, $_POST['search']);
                      $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
                      $stmt = mysqli_stmt_init($con);
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
