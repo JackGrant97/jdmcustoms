@@ -2,7 +2,7 @@
 if (isset($_POST['login-submit'])) {
 
   require 'dbconnect.php';
-  
+
   $mail = $_POST['email'];
   $password = $_POST['password'];
   $_SESSION['FirstName'] = $firstname;
@@ -35,7 +35,7 @@ if (isset($_POST['login-submit'])) {
           $_SESSION['userid'] =  $row['UserID'];
           $_SESSION['FirstName'] =  $row['FirstName'];
 
-          header("Location: ../login.php?login=success");
+          header("Location: ../myprofile.php?login=success");
           exit();
         }
         else {
