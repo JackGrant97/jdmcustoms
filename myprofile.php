@@ -79,7 +79,7 @@
       $query = "SELECT FirstName, LastName, email, postcode, address, Dob, telephone FROM users WHERE UserID = $id";
       $result = mysqli_query($con, $query);
 
-      $sql = "SELECT keyword, COUNT(*) AS Freq FROM search WHERE UserID = $id GROUP BY keyword ORDER by keyword ASC LIMIT 10";
+      $sql = "SELECT keyword FROM search WHERE UserID = $id ORDER by keyword ASC";
         $sresult = mysqli_query($con, $sql);
           if ($sresult):
             if (mysqli_num_rows($sresult) > 0):
