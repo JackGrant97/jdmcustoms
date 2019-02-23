@@ -79,7 +79,7 @@
       $query = "SELECT FirstName, LastName, email, postcode, address, Dob, telephone FROM users WHERE UserID = $id";
       $result = mysqli_query($con, $query);
 
-      $sql = "SELECT keyword FROM search WHERE UserID = $id ORDER by keyword ASC";
+      $sql = "SELECT keyword, COUNT(*) AS Freq FROM search WHERE UserID = $id ORDER by keyword ASC LIMIT 1";
         $sresult = mysqli_query($con, $sql);
           if ($sresult):
             if (mysqli_num_rows($sresult) > 0):
@@ -130,7 +130,7 @@
            <div class="row">
              <div class="col s12 m12 l12">
                <P style="text-align:center;">
-                <?php echo $psearch['keyword'];?> <br>              
+                <?php echo $psearch['keyword'];?> <br>
               </p>
              </div>
            </div>
