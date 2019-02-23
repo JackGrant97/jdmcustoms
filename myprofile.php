@@ -79,9 +79,17 @@
       $query = "SELECT FirstName, LastName, email, postcode, address, Dob, telephone FROM users WHERE UserID = $id";
       $result = mysqli_query($con, $query);
 
+
       if ($result):
         if(mysqli_num_rows($result) > 0):
           while($details = mysqli_fetch_assoc($result)):
+
+            $sql = "SELECT keyword FROM search WHERE UserID = $id";
+            $sresult = mysqli_query($con, $sql);
+            if ($sresult):
+              if (mysqli_num_rows($sresult) > 0) :
+                while ($psearch = mysqli_fetch_assoc($sresult)) :
+
      ?>
     <div class="container">
      <div class="accountDetails">
@@ -118,7 +126,11 @@
              <div class="col s12 m12 l12">
                <h3 style="text-align:center;" ><b>FAVORITE SEARCH</b></h3>
              </div>
+           </div>
+           <div class="row">
+             <div class="col s12 m12 l12">
 
+             </div>
            </div>
          </form>
        </div>
@@ -128,6 +140,9 @@
       endwhile;
     endif;
   endif;
+  endwhile;
+endif;
+endif;
    ?>
   </main>
 
