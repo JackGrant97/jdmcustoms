@@ -75,7 +75,7 @@
         <form action="search.php" method="POST">
           <input type="text" name="search" placeholder="Search">
           <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
-          <button type="submit" class="btn waves-effect" name="submit-fsearch">Favorite Results</button>
+          <button type="submit" class="btn waves-effect" name="submit-fsearch">Favorite Search</button>
         </form>
              <div class="row">
                  <?php
@@ -84,26 +84,7 @@
                    $id = $_SESSION['userid'];
                    $keyword = $_POST['search'];
 
-                   if (isset($_POST['submit-fsearch'])):
-                     $search = mysqli_real_escape_string($con, $_POST['search']);
-                     $query = "SELECT * FROM products WHERE itemMake LIKE '%$search%' OR itemModel LIKE '%$search%' OR itemYear LIKE '%$search%' OR trans LIKE '%$search%' OR fuelType LIKE '%$search%' OR itemColour LIKE '%$search%' OR engineSize LIKE '%$search%'";
-                     $result = mysqli_query($con, $query);
 
-                     $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
-                     $stmt = mysqli_stmt_init($con);
-                     if (!mysqli_stmt_prepare($stmt, $sql)) {
-                       header("Location: ../search.php?error=sqlerror01");
-                       exit();
-                     } else {
-                       header("Location: ../search.php?Favorite=success&result=".$search);
-                     }
-                     mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
-                     mysqli_stmt_execute($stmt);
-
-
-                     if ($result):
-                       if(mysqli_num_rows($result) > 0):
-                         while($product = mysqli_fetch_assoc($result)):
 
                    if (isset($_POST['submit-search'])):
                      $search = mysqli_real_escape_string($con, $_POST['search']);
@@ -113,14 +94,28 @@
                      $sql = "INSERT INTO search (keyword, UserID) VALUES (?, ?)";
                      $stmt = mysqli_stmt_init($con);
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
-                       header("Location: ../search.php?error=sqlerror02");
+                       header("Location: ../search.php?error=sqlerror01");
                        exit();
-                     }else {
-                       header("Location: ../search.php?Favorite=success&result=".$search);
+                     }
+                     else {
+                       header("Location: ../search.php?search=success".$search);
                      }
                      mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                      mysqli_stmt_execute($stmt);
 
+                     if (isset($_POST['submit-fsearch'])) :
+                       $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
+                       $stmt = mysqli_stmt_init($con);
+                       if (!mysqli_stmt_prepare($stmt, $sql)) {
+                         header("Location: ../search.php?error=sqlerror02");
+                         exit();
+                       }
+                       else {
+                         header("Location: ../search.php?Favoritesearch=success".$search);
+                       }
+                     
+                     mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
+                     mysqli_stmt_execute($stmt);
 
                      if ($result):
                        if(mysqli_num_rows($result) > 0):
@@ -152,10 +147,7 @@
                    endif;
                    endif;
                  endif;
-               endwhile;
-             endif;
-             endif;
-           endif;
+                 endif;
                  ?>
               </div>
       </div>
