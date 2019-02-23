@@ -113,7 +113,7 @@
                      $sql = "INSERT INTO search (keyword, UserID) VALUES (?, ?)";
                      $stmt = mysqli_stmt_init($con);
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
-                       header("Location: ../search.php?error=sqlerror01");
+                       header("Location: ../search.php?error=sqlerror02");
                        exit();
                      }else {
                        header("Location: ../search.php?Favorite=success&result=".$search);
