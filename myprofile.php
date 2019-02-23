@@ -79,7 +79,7 @@
       $query = "SELECT FirstName, LastName, email, postcode, address, Dob, telephone FROM users WHERE UserID = $id";
       $result = mysqli_query($con, $query);
 
-      $sql = "SELECT * FROM search WHERE UserID = $id";
+      $sql = "SELECT keyword FROM search WHERE UserID = $id";
         $sresult = mysqli_query($con, $sql);
           if ($sresult):
             if (mysqli_num_rows($sresult) > 0):
