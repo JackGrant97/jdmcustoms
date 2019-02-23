@@ -83,8 +83,7 @@
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
                    $keyword = $_POST['search'];
-                   $fkey = $_SESSION['search'];
-
+                   $fkey = $_GET['search'];
 
                    if (isset($_POST['submit-fsearch'])) {
                      $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
