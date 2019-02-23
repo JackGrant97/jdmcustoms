@@ -83,6 +83,7 @@
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
                    $keyword = $_POST['search'];
+                   $fkeyword = $_GET['search'];
 
                    if (isset($_POST['submit-fsearch'])) {
                      $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
@@ -93,7 +94,7 @@
                      }
 
                    }
-                   mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
+                   mysqli_stmt_bind_param($stmt, "ss", $fkeyword, $id);
                    mysqli_stmt_execute($stmt);
 
                    if (isset($_POST['submit-search'])):
