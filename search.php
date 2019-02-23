@@ -75,7 +75,7 @@
         <form action="search.php" method="POST">
           <input type="text" name="search" placeholder="Search">
           <button type="submit" class="btn waves-effect" name="submit-search">Search</button>
-          <button class="btn waves-effect" name="submit-fsearch">favorite Search</button>
+          <button type="submit" class="btn waves-effect" name="submit-fsearch">favorite Search</button>
         </form>
              <div class="row">
                  <?php
@@ -94,7 +94,7 @@
                      }
 
                    }
-                   mysqli_stmt_bind_param($stmt, "ss",  $keyword, $id);
+                   mysqli_stmt_bind_param($stmt, "ss",  $_SESSION['search'], $id);
                    mysqli_stmt_execute($stmt);
 
                    if (isset($_POST['submit-search'])):
