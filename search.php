@@ -82,9 +82,8 @@
                    $con = mysqli_connect("eu-cdbr-west-02.cleardb.net", "b35dd9c913bab7", "2cd16625", "heroku_11b47e2296993b0") or die("Connection Failed" .
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
-                   $sesearch = $_SESSION['search'];
                    $keyword = $_POST['search'];
-                   $fkeyword = $_GET['search'];
+
 
                    if (isset($_POST['submit-fsearch'])) {
                      $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
@@ -95,7 +94,7 @@
                      }
 
                    }
-                   mysqli_stmt_bind_param($stmt, "ss",  $sesearch, $id);
+                   mysqli_stmt_bind_param($stmt, "ss",  $keyword, $id);
                    mysqli_stmt_execute($stmt);
 
                    if (isset($_POST['submit-search'])):
