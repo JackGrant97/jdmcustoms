@@ -94,7 +94,7 @@
                      }
 
                    }
-                   mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
+                   mysqli_stmt_bind_param($stmt, "ss", $_SESSION['search'], $id);
                    mysqli_stmt_execute($stmt);
 
                    if (isset($_POST['submit-search'])):
