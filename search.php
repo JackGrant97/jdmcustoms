@@ -92,10 +92,10 @@
                        header("Location: ../search.php?error=sqlerror02");
                        exit();
                      }
-
+                     mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
+                     mysqli_stmt_execute($stmt);
                    }
-                   mysqli_stmt_bind_param($stmt, "ss", $_SESSION['search'], $id);
-                   mysqli_stmt_execute($stmt);
+
 
                    if (isset($_POST['submit-search'])):
                      $search = mysqli_real_escape_string($con, $_POST['search']);
