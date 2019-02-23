@@ -68,7 +68,7 @@
         </ul>
             <script>$(".button-collapse").sideNav();</script>
     </header>
-  <body background="assets/speedo.jpg" width="100%" height="100%">
+  <body background="assets/drift.jpeg" width="100%" height="100%">
    	<main>
       <div class="logo" align="middle">
         <img src="assets/jdmcustoms.png" width="50%" height="50%">
