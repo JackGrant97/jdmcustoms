@@ -83,8 +83,6 @@
                    mysqli_error($con));
                    $id = $_SESSION['userid'];
                    $keyword = $_POST['search'];
-                   $psearch = $_SESSION['search'];
-                   $psearch = $_COOKIE['search'];
 
                    if (isset($_POST['submit-fsearch'])) {
                      $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
@@ -109,7 +107,7 @@
                        header("Location: ../search.php?error=sqlerror01");
                        exit();
                      }
-                     mysqli_stmt_bind_param($stmt, "ss", $psearch, $id);
+                     mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
                      mysqli_stmt_execute($stmt);
 
                      if ($result):
