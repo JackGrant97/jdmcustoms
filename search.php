@@ -86,7 +86,7 @@
 
 
                    if (isset($_POST['submit-fsearch'])) {
-                     $sql = "INSERT INTO fsearch (keyword, UserID) VALUES ($_SESSION['search'], $id)";
+                     $sql = "INSERT INTO fsearch (keyword, UserID) VALUES (?, ?)";
                      $stmt = mysqli_stmt_init($con);
                      if (!mysqli_stmt_prepare($stmt, $sql)) {
                        header("Location: ../search.php?error=sqlerror02");
@@ -94,6 +94,7 @@
                      }
 
                    }
+                   mysqli_stmt_bind_param($stmt, "ss",  $_SESSION['search'], $id);
                    mysqli_stmt_execute($stmt);
 
                    if (isset($_POST['submit-search'])):
