@@ -130,39 +130,6 @@
                       <div class="col s6">
                       <b>Statement:</b><br> <?php echo $product['OwnerDesc']?>
                       </div>
-                        <!--<div class="title">
-                            <h3>Product Review</h3>
-                        </div>
-                        <div class="col s6">
-                            <b>Advantages</b>
-                            <br><a>• Performance per pound is extremely good</a>
-                            <br><a>• Still a viable choice for the latest games</a>
-                            <br><a>• Perfect for 1080p gaming</a>
-                            <br><a>• Can be overclocked</a>
-                            <br><br>
-                        </div>
-                        <div class="col s6">
-                            <b>Disadvantages</b>
-                              <br><a>• Older Chipset</a>
-                              <br><a>• Doesn't support DDR4 memory</a>
-                              <br><a>• LGA 1150 is no longer supported</a>
-                              <br><a>• Only small improvements over last gen CPU's </a>
-                              <br><br>
-                        </div>
-                        <div class="con">
-                                <br>
-                                <b>Conclusion</b>
-                                <br>
-                                    <a>Intel’s i7 4770k is a LGA 1150 socket CPU codename Haswell which offers 4 cores, and 8 threads at a base clock of 3.5ghz. However, can easily be overclocked to 4.5ghz with adequate cooling such as a AIO liquid cooling kit. The 4770K is a perfect choice when building a system for 1080p gaming as it can run the latest AAA games at 50- 70FPS. However, newer CPU’s would be preferred for 1440p and 4K gaming as the 4770k cannot handle higher resolutions. This is due to it possibly bottlenecking even with the latest NVidia gtx 1080ti.
-                                    The 4770k is also perfect for entry level content creation as render times at 1080 are surprisingly short especially when paired with a NVidia gtx 1070 and 16gb of DDR3 RAM.
-                                    As a final conclusion I would defiantly recommend the 4770K to first time or budget builders as the CPU is stable, reliable, easy to overclock, and performs exceptionally well.
-                                    </a>
-                        </div>
-                        <div class="rating">
-                            <h3>Final Score</h3>
-                            <b>7/10</b>
-                        </div>
-                        -->
                     </div>
                   </div>
                 </div>
