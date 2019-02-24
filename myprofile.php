@@ -81,9 +81,11 @@
 
       $sql = "SELECT keyword FROM search WHERE UserID = $id ORDER by keyword ASC";
         $sresult = mysqli_query($con, $sql);
+        $datas = array();
           if ($sresult):
             if (mysqli_num_rows($sresult) > 0):
-             while ($psearch = mysqli_fetch_array($sresult)):
+             while ($row = mysqli_fetch_assoc($sresult)):
+               $datas[] = $row;
 
       if ($result):
         if(mysqli_num_rows($result) > 0):
@@ -130,7 +132,12 @@
            <div class="row">
              <div class="col s12 m12 l12">
                <P style="text-align:center;">
-                <?php echo $psearch['keyword'];?> <br>
+                <?php
+                //echo $psearch['keyword'];
+                foreach ($datas as $data) {
+                  echo $data['keyword'];
+                }
+                ?> <br>
               </p>
              </div>
            </div>
