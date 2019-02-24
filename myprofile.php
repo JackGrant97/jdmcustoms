@@ -135,7 +135,7 @@
                 <?php
                 //echo $psearch['keyword'];
                 foreach ($datas as $data) {
-                  echo $data['keyword'];
+                  echo $data['keyword']. " ";
                 }
                 ?> <br>
               </p>
