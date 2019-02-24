@@ -78,8 +78,8 @@
       $id = $_SESSION['userid'];
       $query = "SELECT FirstName, LastName, email, postcode, address, Dob, telephone FROM users WHERE UserID = $id";
       $result = mysqli_query($con, $query);
-
-      $sql = "SELECT * FROM search WHERE UserID = $id ORDER by keyword ASC";
++
+      $sql = "SELECT * FROM search WHERE UserID = $id ORDER by keyword Desc limit 1";
         $sresult = mysqli_query($con, $sql);
         $datas = array();
           if ($sresult):
