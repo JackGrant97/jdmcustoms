@@ -136,6 +136,7 @@
                 //echo $psearch['keyword'];
                 foreach ($datas as $data) {
                   echo $data['keyword'];
+                  echo "<br>";
                 }
                 ?> <br>
               </p>
