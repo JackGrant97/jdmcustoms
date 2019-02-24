@@ -87,7 +87,7 @@
 
       if ($result):
         if(mysqli_num_rows($result) > 0):
-          while($details = mysqli_fetch_array($result)):
+          while($details = mysqli_fetch_assoc($result)):
 
 
      ?>
