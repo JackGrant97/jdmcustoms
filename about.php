@@ -70,8 +70,7 @@
             <script>$(".button-collapse").sideNav();</script>
     </header>
   <body background="assets/mechanic.jpeg" width="100%" height="100%" text="white">
-<main>
-    </div>
+    <main>
          <script>
               $('.carousel.carousel-slider').carousel({fullWidth: true});
         </script>
